@@ -1,7 +1,7 @@
 
-*DISCLAIMER*
-> This workshop relates to the version 81 of the Ensembl API (held at the EBI, in Sept 2015).
-> Some methods may have been deprecated since that workshop.
+The workshop materials relate to a workshop given in June 2016 in
+Cambridge, on the version 84 of the API. Most of what is described is still
+valid, but you may get warnings about deprecated methods.
 
-The slides can be found in the current directory, the exercises (perl scripts) are under API_workshop_exercises/
-Additional information can be found online at http://www.ebi.ac.uk/~muffato/workshops/2015_09_EBI/
+Additional information can be found [online](http://www.ebi.ac.uk/~muffato/workshops/2016_06_Cambridge/)
+

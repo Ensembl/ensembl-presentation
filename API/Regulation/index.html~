@@ -1,0 +1,332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="eng">
+<!-- InstanceBegin template="/Templates/new_template_leftmenu.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+ <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> --> <!-- Not yet implemented -->
+
+  <title>Ensembl Variation API workshop - 2016/01 Hinxton</title>
+  <meta name="description" content="EMBL-EBI"><!-- Describe what this page is about -->
+  <meta name="keywords" content="bioinformatics, europe, institute, ensembl"><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
+  <meta name="author" content="Laurent Gil"><!-- Your [project-name] here -->
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/boilerplate-style.css">
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/ebi-global.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/ebi-visual.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/984-24-col-fluid.css" type="text/css" media="screen">
+  
+  <!-- you can replace this with [projectname]-colours.css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
+  <!-- also inform ES so we can host your colour palette file -->
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/embl-petrol-colours.css" type="text/css" media="screen">
+  
+  <!-- for production the above can be replaced with -->
+  <!--
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/mini/ebi-fluid-embl.css">
+  -->
+
+  <style type="text/css">
+    /* You have the option of setting a maximum width for your page, and making sure everything is centered */
+    /* body { max-width: 1600px; margin: 0 auto; } */
+    .section_header {border:1px solid #1d8086;background-color:#1d8086;color:#FFF;padding:2px 5px;font-weight:bold;font-size:1.1em;border-top-left-radius:6px;border-top-right-radius:6px}
+    .section_content {border:1px solid #1d8086;padding:0px 4px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:20px}
+    .exercise {float:left;min-width:100px;border:1px solid #1d8086;background-color:#70bdbd;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px}
+    .file_list {float:left;border:1px solid #1d8086;padding:5px 4px;margin-left:5px}
+    .exercise_output {border-bottom:1px solid #a9d7d7;background-color:#a9d7d7;padding:2px 8px;margin-top:4px;margin-bottom:4px}
+    .exercise_html {border:1px solid #e4f8f9;background-color:#e4f8f9;padding:2px 8px;margin-top:4px;margin-bottom:4px}
+    .exercise_type {float:left;padding:4px 6px;font-size:1.1em;}
+    .exercise_type::before {content: "\2192 ";margin-right:6px;color:#1d8086}
+    .separator {margin-left:5px;margin-right:5px}
+  </style>
+  <!-- end CSS-->
+
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+  
+  <!-- Full build -->
+  <!-- <script src="//www.ebi.ac.uk/web_guidelines/js/libs/modernizr.minified.2.1.6.js"></script> -->
+  
+  <!-- custom build (lacks most of the "advanced" HTML5 support -->
+  <script src="//www.ebi.ac.uk/web_guidelines/js/libs/modernizr.custom.49274.js"></script>    
+
+</head>
+
+<body class="level2"><!-- add any of your classes or IDs -->
+  <div id="skip-to">
+    <ul>
+      <li><a href="#content">Skip to main content</a></li>
+      <li><a href="#local-nav">Skip to local navigation</a></li>
+      <li><a href="#global-nav">Skip to EBI global navigation menu</a></li>
+      <li><a href="#global-nav-expanded">Skip to expanded EBI global navigation menu (includes all sub-sections)</a></li>
+    </ul>
+  </div>
+  
+  <div id="wrapper" class="container_24">
+    <header>
+      <div id="global-masthead" class="masthead grid_24">
+        <!--This has to be one line and no newline characters-->
+        <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><img src="//www.ebi.ac.uk/web_guidelines/images/logos/EMBL-EBI/EMBL_EBI_Logo_white.png" alt="EMBL European Bioinformatics Institute"></a>
+
+        <nav>
+          <ul id="global-nav">
+            <!-- set active class as appropriate -->
+            <li class="first active" id="services"><a href="//www.ebi.ac.uk/services">Services</a></li>
+            <li id="research"><a href="//www.ebi.ac.uk/research">Research</a></li>
+            <li id="training"><a href="//www.ebi.ac.uk/training">Training</a></li>
+            <li id="industry"><a href="//www.ebi.ac.uk/industry">Industry</a></li>
+            <li id="about" class="last"><a href="//www.ebi.ac.uk/about">About us</a></li>
+          </ul>
+        </nav>
+      
+      </div>
+    
+      <div id="local-masthead" class="masthead grid_24 nomenu">
+      
+        <!-- local-title -->
+        <div class="grid_24 alpha" id="local-title" style="padding:10px 5px;vertical-align:middle">
+          <img alt="EnsEMBL logo" src="/sites/ebi.ac.uk/files/styles/thumbnail/public/resource/logo/ebang-400dpi.png" style="width:60px;height:57px;margin:0px 10px;vertical-align:middle" />
+          <h1 style="display:inline;vertical-align:middle">Ensembl Variation API workshop <span style="color:#FFF;font-size:20pt">|</span><span style="color:#FFF;font-size:20pt">Hinxton</span></h1>
+        </div>
+        <!-- /local-title -->
+     
+        <!-- /local-nav -->
+      
+      </div>
+    </header>
+   
+    <div id="content" role="main" class="grid_24 clearfix">
+
+      <!-- start left menu here  -->
+      <section class="grid_5 alpha">
+        <div class="leftmenu" id="leftmenu" style="visibility: visible; display: block;margin-left:4px">
+    
+          <script type="text/javascript" src="/inc/js/jquery.js"></script>
+          <script type="text/javascript">
+             $("#leftmenu").load("/~lgil/left_menu.html" ,function() {});
+          </script> 
+        </div>
+      </section>
+
+      <section class="grid_19">
+        <nav id="breadcrumb">
+          <p>
+            <a href="../../">Home</a> &gt; <a href="../">Workshops</a> &gt; Hinxton, 26th of January 2016
+          </p>
+        </nav>
+
+        <div style="font-size:1.1em;font-weight:bold;margin-bottom:10px">
+    This workshop is related to the version <span style="color:#1d8086;font-weight:bold">83</span> of the Ensembl (API / data)
+  </div>
+
+  <div class="section_header">Useful links</div>
+  <div class="section_content">
+    <h4>API documentation</h4>
+    <ul>
+      <li><a href="http://www.ensembl.org/info/docs/Doxygen/variation-api/index.html" target="_blank">Ensembl Variation API documentation (Doxygen)</a></li>
+      <li><a href="http://www.ensembl.org/info/docs/api/variation/variation_tutorial.html" target="_blank">Ensembl Variation API - tutorial</a></li>
+    </ul>
+    <h4>Database documentation</h4>
+    <ul style="padding-bottom:0px;margin-bottom:6px">        
+      <li><a href="http://www.ensembl.org/info/docs/api/variation/variation-database-schema.pdf" target="_blank">Ensembl Variation - database schema</a></li>
+      <li><a href="http://www.ensembl.org/info/docs/api/variation/variation_schema.html" target="_blank">Ensembl Variation - tables description</a></li>
+    </ul> 
+  </div>
+
+  <div class="section_header">Materials</div>
+  <div class="section_content" style="padding-top:4px;padding-bottom:4px">
+    <ul style="padding-bottom:0px;margin-bottom:4px">
+      <li>Download all the materials: slides + exercises [<a href="ensembl_workshop_materials.zip" target="_blank">ZIP</a>]</li>
+      <li>Slides [<a href="slides/Variation_API.pdf" target="_blank">PDF</a>]</li>
+    </ul>
+  </div>
+
+  <div class="section_header">Solution of the exercises</div>
+  <div class="section_content">
+    
+    <!-- Script display generated using http://tohtml.com/perl/ (theme "Eclipse") -->
+    <!-- Exercise 1 -->
+    <div style="margin-top:15px">
+      <div class="exercise">Exercise 1 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex1_output.txt" target="_blank"> Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise1.pl" target="_blank">Script <small>[.PL]</small></a> 
+         <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice1.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Variation</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 2 -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 2 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex2_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise2.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice2.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Allele</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 3 -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 3 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex3_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise3.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice3.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Genotype</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 4 -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 4 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex4_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise4.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice4.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Variation Feature</div>
+      <div style="clear:both"></div>
+    </div>
+    
+    <!-- Exercise 5 -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 5 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex5_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise5.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice5.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Structural Variation</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 6 -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 6 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex6_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise6.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice6.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Phenotype</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 7 -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 7 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex7_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise7.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice7.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Citation</div>
+      <div style="clear:both"></div>
+    </div>
+    
+    <!-- Exercise 8a -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 8a :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex8a_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise8a.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice8a.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Transcript Variation</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 8b -->
+    <div style="margin-top:25px">
+      <div class="exercise">Exercise 8b :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex8b_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise8b.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice8b.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Transcript Variation Allele</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Exercise 9 -->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Exercise 9 :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises/ex9_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="exercises/exercise9.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/exercice9.html" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Linkage Disequilibrium</div>
+      <div style="clear:both"></div> 
+    </div>
+    
+    <!-- Notes -->
+    <div class="section_header">Notes</div>
+    <div class="section_content" style="padding-top:4px;padding-bottom:4px">
+      <ul style="padding-bottom:0px;margin-bottom:4px">
+        <li> <span style="color:#1d8086;font-weight:bold">Exercises 2, 3, and 9</span> use an API extension to read large scale genotype data from VCF files. 
+See our recent <a href="http://www.ensembl.info/blog/2015/06/18/1000-genomes-phase-3-frequencies-genotypes-and-ld-data">blog post </a> for details on how to configure this in your own working environment.
+        </li>
+        <li> If there are problems with <span style="color:#1d8086;font-weight:bold">Exercise 9</span>, please, check that the script <b>ensembl-variation/C_code/calc_genotypes.c</b> has been compiled (i.e. you should see the file <b>calc_genotypes</b> in the same directory).<br>
+If not, please read the <b>README.txt</b> file for the instructions.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Exercise VEP -->
+    <div style="margin-top:35px;margin-bottom:20px;padding-top:20px;border-top:2px solid #1d8086">
+      <div class="exercise">Exercise VEP</div>
+      <div class="file_list">
+        <a class="exercise_html" href="exercises/exerciseVEP_solution.html" target="_blank">Solution <small>[.HTML]</small></a>
+      </div>
+      <div style="clear:both"></div> 
+    </div>
+
+</section>
+
+    <!-- Footer -->
+    <div class="footerdiv" id="footerdiv" style="z-index:2;">
+      <iframe src="/inc/foot.html" name="foot" frameborder="0" marginwidth="0px" marginheight="0px" scrolling="no" height="22px" width="100%" style="z-index:2;">
+        Your browser does not support inline frames or is currently configured not to display inline frames. Content can be viewed at actual source page: http://www.ebi.ac.uk/inc/foot.html
+      </iframe>
+    </div>
+    <script src="http://www.ebi.ac.uk/inc/js/footer.js" type="text/javascript"></script>
+  </div>
+</body>
+</HTML>

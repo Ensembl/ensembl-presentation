@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link href="prism.css" rel="stylesheet" />
+  <script src="samaxesjs.toc-1.3.1.js"></script>
+  <script>
+        samaxesJS.toc();
+  </script>
+
+</head>
+<body>
+<script src="prism.js"></script>
+
+<h2>CRISPR exercise 1</h2>
+
+<pre>
+<code class="language-bash">
+<!--#include file="find_crispr_sites.bash" -->
+</code>
+</pre>
+
+</body>
+</html>

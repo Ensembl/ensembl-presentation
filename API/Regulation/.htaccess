@@ -1,0 +1,6 @@
+IndexIgnore README.html HEADER.html *~
+
+Options +Includes 
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml 
+

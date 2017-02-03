@@ -32,15 +32,17 @@ my $motif_adaptor  = Bio::EnsEMBL::Registry->get_adaptor('Human', 'Funcgen', 'Mo
 my @motifs = @{ $motif_adaptor->fetch_all_by_Slice( $rf_slice )};
 print "Found ". scalar @motifs . ' transcription factor motifs in ' . $rf_stable_id . "\n";
 
-# For each of the retrfeved motifs print the motif name
-# the sequence and the relative affinity of that sequence
+# For each of the retrfeved motifs print the motif dbID, binding matrix 
+# name, the sequence and the relative affinity of that sequence
 foreach my $motif ( @motifs ) {
     my $sequence       = $motif->seq;
     my $binding_matrix = $motif->binding_matrix;
     
-    print "Relative affinity of the "
+    print "Relative affinity of motif with ID "
+          . $motif->dbID
+          . " from matrix "
           . $binding_matrix->name
-          . " motif with sequence "
+          . "  with sequence "
           . $sequence
           . " : "
           . $binding_matrix->relative_affinity($sequence)

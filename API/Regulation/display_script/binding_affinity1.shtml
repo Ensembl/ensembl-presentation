@@ -7,16 +7,16 @@
   </script>
 
   <meta charset="utf-8">
-  <title>Binding affinity exercise 2 - Ensembl Regulation API workshop - February 2017, Taiwan</title>
+  <title>Binding affinity exercise 1 - Ensembl Regulation API workshop - February 2017, Taiwan</title>
 </head>
 <body>
 <script src="prism.js"></script>
 
-<h2>Binding affinity exercise 2</h2>
+<h2>Binding affinity exercise 1</h2>
 
 <pre>
 <code class="language-perl">
-<!--#include file="binding_affinity2.pl" -->
+<!--#include file="binding_affinity1.pl" -->
 </code>
 </pre>
 

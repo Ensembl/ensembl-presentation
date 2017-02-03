@@ -6,6 +6,8 @@
         samaxesJS.toc();
   </script>
 
+  <meta charset="utf-8">
+  <title>Microarrays exercise 1 - Ensembl Regulation API workshop - February 2017, Taiwan</title>
 </head>
 <body>
 <script src="prism.js"></script>

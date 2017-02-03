@@ -1,0 +1,14 @@
+Found 13 transcription factor motifs in ENSR00000000667
+Relative affinity of the MA0139.1 motif with sequence AGGCCAGCAAGTGGCAGGG : 0.866006998559655
+Relative affinity of the MA0139.1 motif with sequence CACCCAGAGGAGGGCAGCG : 0.865127209303853
+Relative affinity of the MA0139.1 motif with sequence TCGCCACTAGGTGGCAGGC : 0.936788245295537
+Relative affinity of the MA0162.2 motif with sequence TGTCCGCCCACGCG : 0.957171381892502
+Relative affinity of the PB0010.1 motif with sequence TCCGCCCACGCGGT : 0.94156872189562
+Relative affinity of the MA0139.1 motif with sequence GAGACCCCAGAGGGCAGCA : 0.861573139645456
+Relative affinity of the MA0366.1 motif with sequence AGGGG : 1
+Relative affinity of the MA0341.1 motif with sequence AGGGG : 1
+Relative affinity of the PB0010.1 motif with sequence CCCGCCCCCGCCGC : 0.925702041405788
+Relative affinity of the MA0162.2 motif with sequence CGCCCGCCCCCGCC : 0.986635629496039
+Relative affinity of the MA0337.1 motif with sequence CCCCCGC : 1
+Relative affinity of the PB0010.1 motif with sequence CCCGCCCCCACCCC : 0.880994102873579
+Relative affinity of the MA0162.2 motif with sequence GGCCCGCCCCCACC : 0.973045700299644

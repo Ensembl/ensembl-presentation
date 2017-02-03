@@ -40,8 +40,8 @@
     /* body { max-width: 1600px; margin: 0 auto; } */
     .section_header {border:1px solid #1d8086;background-color:#1d8086;color:#FFF;padding:2px 5px;font-weight:bold;font-size:1.1em;border-top-left-radius:6px;border-top-right-radius:6px}
     .section_content {border:1px solid #1d8086;padding:0px 4px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:20px}
-    .exercise {float:left;min-width:100px;border:1px solid #1d8086;background-color:#70bdbd;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px}
-    .empty_exercise {float:left;min-width:100px;border:1px solid #FFFFFF;background-color:#FFFFFF;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px}
+    .exercise {float:left;min-width:125px;border:1px solid #1d8086;background-color:#70bdbd;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px;text-align:right}
+    .empty_exercise {float:left;min-width:125px;border:1px solid #FFFFFF;background-color:#FFFFFF;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px}
     .file_list {float:left;border:1px solid #1d8086;padding:5px 4px;margin-left:5px}
     .exercise_output {border-bottom:1px solid #a9d7d7;background-color:#a9d7d7;padding:2px 8px;margin-top:4px;margin-bottom:4px}
     .exercise_html {border:1px solid #e4f8f9;background-color:#e4f8f9;padding:2px 8px;margin-top:4px;margin-bottom:4px}
@@ -131,15 +131,29 @@
           The slides and exercises presented here are based on Ensembl <span style="color:#1d8086;font-weight:bold">87</span>
         </div>
 
-    <!-- WiggleTools Exercises-->
+    <!-- Regulatory Feature Exercise-->
     <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Wiggletools :</div>
+      <div class="exercise">Regulatory Feature :</div>
       <div class="file_list">
-        <a class="exercise_output" href="" target="_blank">Output <small>[.TXT]</small></a>
+        <a class="exercise_output" href="exercises_output/regulatory_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/write_sums.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <a class="exercise_output" href="display_script/regulatory_feature1.pl" target="_blank">Script <small>[.PL]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/write_sums.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+        <a class="exercise_html" href="display_script/regulatory_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Motif Feature Exercise-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Motif Feature :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises_output/motif_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/motif_feature1.pl" target="_blank">Script <small>[.PL]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/motif_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
       <div class="exercise_type">Exercise 1</div>
       <div style="clear:both"></div>
@@ -154,6 +168,20 @@
         <a class="exercise_output" href="display_script/binding_affinity1.pl" target="_blank">Script <small>[.PL]</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/binding_affinity1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- WiggleTools Exercises-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/write_sums.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/write_sums.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
       <div class="exercise_type">Exercise 1</div>
       <div style="clear:both"></div>
@@ -183,6 +211,19 @@
         <a class="exercise_html" href="display_script/find_crispr_sites_around_gene.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
       <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">CRISPR :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="exercises_output/find_closest_crispr_sites_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/find_closest_crispr_sites.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/find_closest_crispr_sites.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 3</div>
       <div style="clear:both"></div>
     </div>
 

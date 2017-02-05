@@ -16,7 +16,7 @@
 
 <pre>
 <code class="language-perl">
-<!--#include file="motif_feature1.pl" -->
+<!--#include file="motif_feature1._pl" -->
 </code>
 </pre>
 

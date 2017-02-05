@@ -16,7 +16,7 @@
 
 <pre>
 <code class="language-perl">
-<!--#include file="binding_affinity1.pl" -->
+<!--#include file="binding_affinity1._pl" -->
 </code>
 </pre>
 

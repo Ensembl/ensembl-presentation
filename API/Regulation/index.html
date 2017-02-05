@@ -97,7 +97,7 @@
 
         <!-- local-title -->
         <div class="grid_24 alpha" id="local-title" style="padding:10px 5px;vertical-align:middle">
-          <img alt="EnsEMBL logo" src="/sites/ebi.ac.uk/files/styles/thumbnail/public/resource/logo/ebang-400dpi.png" style="width:60px;height:57px;margin:0px 10px;vertical-align:middle" />
+          <img alt="EnsEMBL logo" src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/thumbnail/public/resource/logo/ebang-400dpi.png" style="width:60px;height:57px;margin:0px 10px;vertical-align:middle" />
           <h1 style="display:inline;vertical-align:middle">Ensembl Regulation API workshop <span style="color:#FFF;font-size:20pt">|</span><span style="color:#FFF;font-size:20pt">Taiwan</span></h1>
         </div>
         <!-- /local-title -->
@@ -112,11 +112,43 @@
       <!-- start left menu here -->
       <section class="grid_5 alpha">
         <div class="leftmenu" id="leftmenu" style="visibility: visible; display: block;margin-left:4px">
+          <!-- The following 2 divs add an Icon Box to your Menu -->
+          <div style="background-color:#70bdbd;padding-left:5px;font-size:1.2em;color:#FFF;font-weight:bold;border-top-left-radius:6px;border-top-right-radius:6px;margin:0px 2px">Useful links</div>
+          <div style="border:1px solid #70bdbd;margin:0px 2px 10px;padding-top:5px;border-bottom-left-radius:6px;border-bottom-right-radius:6px">                                         
+            <ul>
+              <li><a href="http://www.ensembl.org" target="_blank">Ensembl website</a></li>       
+            </ul>
 
-          <script type="text/javascript" src="/inc/js/jquery.js"></script>
-          <script type="text/javascript">
-             $("#leftmenu").load("/~kostadim/left_menu.html" ,function() {});
-          </script>
+            <h4>Data</h4>
+            <ul>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/index.html" target="_blank">Ensembl Regulation overview</a></li>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/regulation_sources.html" target="_blank">Data sources</a></li>
+            </ul>
+            
+            <h4>Perl API</h4>
+            <ul>  
+              <li><a href="http://www.ensembl.org/info/docs/api/funcgen/regulation_tutorial.html" target="_blank">Perl API Tutorial</a></li>
+              <li><a href="http://www.ensembl.org/info/docs/Doxygen/funcgen-api/index.html" target="_blank">Perl API Reference</a></li>
+            </ul>
+
+            <h4>Database</h4>
+            <ul>
+              <li><a href="http://www.ensembl.org/info/docs/api/funcgen/trimmed_funcgen_schema.png" target="_blank">Database schema [PNG]</a></li>
+              <li><a href="http://www.ensembl.org/info/docs/api/funcgen/funcgen_schema.html" target="_blank">Database tables</a></li>
+            </ul>
+
+            <h4>Ensembl Regulatory Build</h4>
+            <ul>  
+              <li><a href="http://genomebiology.com/2015/16/1/56" target="_blank">Paper</a></li>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/regulatory_build.html" target="_blank">General documentation</a></li>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/regulatory_segmentation.html" target="_blank">Genome segmentation</a></li>
+            </ul>
+
+            <h4>REST API</h4>
+            <ul>
+              <li><a href="http://rest.ensembl.org/" target="_blank">REST API</a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -137,7 +169,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/regulatory_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/regulatory_feature1.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/regulatory_feature1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/regulatory_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
@@ -151,7 +183,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/motif_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/motif_feature1.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/motif_feature1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/motif_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
@@ -165,7 +197,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/binding_affinity1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/binding_affinity1.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/binding_affinity1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/binding_affinity1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
@@ -206,7 +238,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/find_crispr_sites_around_gene_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/find_crispr_sites_around_gene.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/find_crispr_sites_around_gene._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/find_crispr_sites_around_gene.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
@@ -233,7 +265,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/microarrays1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/microarrays1.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/microarrays1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/microarrays1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
@@ -246,7 +278,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/microarrays2_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/microarrays2.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/microarrays2._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/microarrays2.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>
@@ -259,7 +291,7 @@
       <div class="file_list">
         <a class="exercise_output" href="exercises_output/microarrays3_output.txt" target="_blank">Output <small>[.TXT]</small></a>
         <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/microarrays3.pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
+        <a class="exercise_output" href="display_script/microarrays3._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
         <span class="separator">-</span>
         <a class="exercise_html" href="display_script/microarrays3.shtml" target="_blank">Script display <small>[.HTML]</small></a>
       </div>

@@ -16,7 +16,7 @@
 
 <pre>
 <code class="language-perl">
-<!--#include file="regulatory_feature1.pl" -->
+<!--#include file="regulatory_feature1._pl" -->
 </code>
 </pre>
 

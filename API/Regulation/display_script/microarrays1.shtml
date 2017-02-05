@@ -16,7 +16,7 @@
 
 <pre>
 <code class="language-perl">
-<!--#include file="microarrays1.pl" -->
+<!--#include file="microarrays1._pl" -->
 </code>
 </pre>
 

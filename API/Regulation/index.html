@@ -173,10 +173,43 @@
         </div>
 
 
-    <!-- Motif Feature Exercise-->
+
+
+
+
     <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Regulatory Features:</div>
+      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
+      <ol>
+        <li>
+Print a list of epigenomes that are in the current regulatory build.
+        </li>
+        <li>
+Fetch the regulatory feature with stable id TODO
+
+Print 
+      <ul>
+        <li>
+The name of its feature type,
+        </li>
+        <li>
+The name of the sequence it is on and
+        </li>
+        <li>
+The start and end coordinates.
+<br />
+Hint: The sequence is stored in the Slice object.
+        </li>
+      </ul>
+      
+        </li>
+      </ol>
+      </div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
       <div class="exercise">Motif Features:</div>
-      <div class="file_list">
+      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
       <ol>
         <li>
           Retrieve all Motif Features that have been annotated in the Regulatory Feature with stable id ‘ENSR00000000667’
@@ -187,11 +220,112 @@
       </ol>
       </div>
     </div>
-    
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">CRISPR:</div>
-      <div class="file_list">
+
+
+
+
+    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
+      <div class="exercise">Genome statistics</div>
+      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
       <ol>
+        <li>
+        Find the signal files in bigWig format for 
+          <ul>
+            <li>
+              Aorta,
+            </li>
+            <li>
+              Fetal_Muscle_Leg,
+            </li>
+            <li>
+              K562,
+            </li>
+            <li>
+              Lung and
+            </li>
+            <li>
+              Monocytes_CD14_PB_Roadmap
+            </li>
+          </ul>
+          On the ftp site.
+        </li>
+        
+        <li>
+          <p>
+          The bigWig files are large. They have been downloaded to your virtual machine so you don’t have to wait for the download. 
+          </p>
+          <p>
+          You can find them here: TODO
+          </p>
+          <p>
+          Use these in the following exercises.
+          </p>
+            Create a bigWig file that has the mean H3K27ac signal for 
+            <ul>
+              <li>
+                Aorta,
+              </li>
+              <li>
+                Fetal,
+              </li>
+              <li>
+                K562 and 
+              </li>
+              <li>
+                Monocytes CD14 PB Roadmap.
+              </li>
+            </ul>
+
+        </li>
+        <li>A bed file with the current regulatory build has been copied to your virtual machine:
+          <p>
+TODO
+          </p>
+          <p>
+Create a bed file with all regulatory features from chromosome 22.
+          </p>
+        </li>
+        <li>
+          <p>
+Find the 10 regulatory features that have the highest mean signal.
+          </p>
+          <p>
+Hint: 
+            <ul>
+              <li>
+If you use the smaller file with regulatory features from chromosome 22 only, your testruns will complete more quickly.
+              </li>
+              <li>
+The apply_paste function from wiggletools may be helpful.
+              <li>
+Bash has a sort function that can sort by specific columns.
+              </li>
+            </ul>
+          </p>
+
+        </li>
+        <li>Find the 10 regulatory features in which the H3K27ac signal from Lung is the most different from the average signal of the other cell types.
+        </li>
+      </ol>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
+      <div class="exercise">CRISPR:</div>
+      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
+      <ol>
+        <li>
+          Find the file with the CRISPR sites on the Ensembl ftp site.
+          <br />
+          Hint: You can use the CrisprSitesFile object.
+        </li>
+
         <li>
           Find the canonical CRISPR sites within a given genomic locus and store them in a BED file.
         </li>
@@ -209,10 +343,10 @@
     </div>
    </div>
 
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Microarray:</div>
+    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
+      <div class="exercise">Microarrays:</div>
 
-      <div class="file_list">
+      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
         <ol>
           <li>
             Export all microarray platforms that are annotated for humans in Ensembl and their associated information.
@@ -226,9 +360,23 @@
           <li>
             For a given probe find the coordinates of the genomic locus the probe has been aligned to.
           </li>
+          
         </ol>
       </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </section>
 

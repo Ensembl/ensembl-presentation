@@ -236,9 +236,31 @@ For every epigenome in the current regulatory build, print the activity that it 
     <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
       <div class="exercise">Statistics with Regulatory Features</div>
       <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
+      <p>
+      You are interested in the epigenome of Lung and want to find out, which regulatory regions from Lung differ most in their activity from the epigenomes of a baseline of other cell types. 
+      </p>
+      <p>
+      The histone H3K27ac is thought to be a mark of active regulatory elements and may distinguish active enhancers and promoters from their inactive counterparts.
+      </p>
+      <p>
+      You decide to look at the binding sites of the histone H3K27ac to regulatory regions in Lung and compare them to a baseline of epigenomes that were assayed for H3K27ac.
+      </p>
+      <p>
       <ol>
         <li>
-        Find the signal files in bigWig format for 
+          Find all epigenomes in Ensembl for which ChIP-seq data from an H3K27ac assay has been aligned to human.
+          <br />
+          Hint:
+          <ul>
+            <li>
+              Histones and transcriptions factors are feature types (FeatureType object).
+            </li>
+            <li>
+              Alignments are stored with a ResultSet object.
+            </li>
+          </ul>
+        <li>
+        You decide to use these epigenomes for your baseline: 
           <ul>
             <li>
               Aorta,
@@ -247,16 +269,27 @@ For every epigenome in the current regulatory build, print the activity that it 
               Fetal_Muscle_Leg,
             </li>
             <li>
-              K562,
+              K562 and
             </li>
             <li>
-              Lung and
-            </li>
-            <li>
-              Monocytes_CD14_PB_Roadmap
+              Monocytes_CD14_PB_Roadmap.
             </li>
           </ul>
-          On the ftp site.
+          Find their signal files for H3K27ac and for Lung in bigWig format on the ftp site.
+          
+          <br />
+          
+          Hint:
+
+          <ul>
+            <li>
+              The base directory for external files is: ftp://ftp.ensembl.org/pub/current_data_files
+            </li>
+            <li>
+              Consider the dbfile_path method from the ResultSet object.
+            </li>
+          </ul>
+          
         </li>
         
         <li>
@@ -284,6 +317,14 @@ For every epigenome in the current regulatory build, print the activity that it 
                 Monocytes CD14 PB Roadmap.
               </li>
             </ul>
+          Hint:
+
+          <ul>
+            <li>
+              The <a href=" https://github.com/Ensembl/WiggleTools ">wiggletools repository</a> has a tutorial explaining its commands.
+            </li>
+          </ul>
+            
 
         </li>
         <li>A bed file with the current regulatory build has been copied to your virtual machine:

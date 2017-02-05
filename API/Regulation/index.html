@@ -260,7 +260,7 @@ For every epigenome in the current regulatory build, print the activity that it 
             </li>
           </ul>
         <li>
-        You decide to use these epigenomes for your baseline: 
+        You decide to use the following epigenomes for your baseline: 
           <ul>
             <li>
               Aorta,
@@ -283,10 +283,10 @@ For every epigenome in the current regulatory build, print the activity that it 
 
           <ul>
             <li>
-              The base directory for external files is: ftp://ftp.ensembl.org/pub/current_data_files
+              Consider the dbfile_path method from the ResultSet object.
             </li>
             <li>
-              Consider the dbfile_path method from the ResultSet object.
+              The base directory for external files is: ftp://ftp.ensembl.org/pub/current_data_files
             </li>
           </ul>
           
@@ -402,13 +402,59 @@ Bash has a sort function that can sort by specific columns.
             Export all microarray platforms that are annotated for humans in Ensembl and their associated information.
           </li>
           <li>
-            For a given species and microarray platform retrieve all probe to transcript mappings.
+            You have performed a microarray experiment with the array HumanWG_6_V2. The following probes gave you a positive signal:
+            
+          <ul>
+          <li>
+          ILMN_1763508, 
           </li>
           <li>
-            For the above mappings add the probe to gene information.
+          ILMN_1861090, 
           </li>
           <li>
-            For a given probe find the coordinates of the genomic locus the probe has been aligned to.
+          ILMN_1890175, 
+          </li>
+          <li>
+          ILMN_1749304,
+          </li>
+          <li>
+          ILMN_1894173, 
+          </li>
+          <li>
+          ILMN_1911643, 
+          </li>
+          <li>
+          ILMN_1891089, 
+          </li>
+          <li>
+          ILMN_1859810,
+          </li>
+          <li>
+          ILMN_1843473 and
+          </li>
+          <li>
+          ILMN_1770856
+          </li>
+          </ul>
+           
+           Which transcripts do they map to?
+           <br />
+          Hint:
+          <ul>
+            <li>
+              The method get_all_Transcript_DBEntries from the probe object may be useful.
+            </li>
+
+          </ul>
+          
+          </li>
+          <li>
+            Which genes do these transcripts belong to?
+            <br />
+            Modify the script above so it retrieves the gene stable id for every transcript.
+          </li>
+          <li>
+            For ILMN_1763508 from the same array, find all matches it makes in the human genome.
           </li>
           
         </ol>

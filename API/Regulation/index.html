@@ -118,7 +118,12 @@
             <ul>
               <li><a href="http://www.ensembl.org" target="_blank">Ensembl website</a></li>       
             </ul>
-
+            <h4>Slides</h4>
+            <ul>
+              <li><a href="slides/Funcgen_API_workshop_Feb_2017.pptx">Regulatory features and Motifs</a></li>
+              <li><a href="slides/Crispr.pptx">Crispr</a></li>
+              <li><a href="slides/Microarrays.pptx">Microarrays</a></li>
+            </ul>
             <h4>Data</h4>
             <ul>
               <li><a href="http://www.ensembl.org/info/genome/funcgen/index.html" target="_blank">Ensembl Regulation overview</a></li>
@@ -148,6 +153,10 @@
             <ul>
               <li><a href="http://rest.ensembl.org/" target="_blank">REST API</a></li>
             </ul>
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="solutions.html">Solutions</a></li>
+            </ul>
           </div>
         </div>
       </section>
@@ -163,143 +172,69 @@
           The slides and exercises presented here are based on Ensembl <span style="color:#1d8086;font-weight:bold">87</span>
         </div>
 
-    <!-- Regulatory Feature Exercise-->
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Regulatory Feature :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="exercises_output/regulatory_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/regulatory_feature1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/regulatory_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 1</div>
-      <div style="clear:both"></div>
-    </div>
 
     <!-- Motif Feature Exercise-->
     <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Motif Feature :</div>
+      <div class="exercise">Motif Features:</div>
       <div class="file_list">
-        <a class="exercise_output" href="exercises_output/motif_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/motif_feature1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/motif_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      <ol>
+        <li>
+          Retrieve all Motif Features that have been annotated in the Regulatory Feature with stable id ‘ENSR00000000667’
+        </li>
+        <li>
+          If the motif sequence changes due to a mutation how is the relative binding affinity affected? In the above Regulatory Feature you have retrieved one with id ‘759795’. Consider that the motif sequence changes to ’CCCGGCCCCACCCC’.
+        </li>
+      </ol>
       </div>
-      <div class="exercise_type">Exercise 1</div>
-      <div style="clear:both"></div>
     </div>
-
-    <!-- Binding affinity Exercises-->
+    
     <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Binding affinity :</div>
+      <div class="exercise">CRISPR:</div>
       <div class="file_list">
-        <a class="exercise_output" href="exercises_output/binding_affinity1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/binding_affinity1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/binding_affinity1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 1</div>
-      <div style="clear:both"></div>
-    </div>
+      <ol>
+        <li>
+          Find the canonical CRISPR sites within a given genomic locus and store them in a BED file.
+        </li>
 
-    <!-- WiggleTools Exercises-->
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Wiggletools :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/write_sums.bash" target="_blank">Script <small>[.BASH]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/write_sums.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 1</div>
-      <div style="clear:both"></div>
-    </div>
+        <li>
+          Given a gene (‘SERTM1’) find the canonical CRISPR sites within a genomic region 500bp upstream of the transcription start site to 500bp downstream of the transcription end site.
+        </li>
 
-    <!-- CRISPR Exercises-->
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">CRISPR :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="exercises_output/find_crispr_sites_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/find_crispr_sites.bash" target="_blank">Script <small>[.BASH]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/find_crispr_sites.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 1</div>
-      <div style="clear:both"></div>
+        <li>
+          Find the closest canonical CRISPR site(s) to genomic position on chromosome 4: 121819483 using bedtools closest.
+          <br />
+          Hint: First extract all CRISPR sites from the bigBed file in a region 200bp around the location of interest.
+        </li>
+      </ol>
     </div>
+   </div>
 
     <div style="margin-top:25px;margin-bottom:20px">
-      <div class="empty_exercise">CRISPR :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="exercises_output/find_crispr_sites_around_gene_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/find_crispr_sites_around_gene._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/find_crispr_sites_around_gene.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 2</div>
-      <div style="clear:both"></div>
-    </div>
+      <div class="exercise">Microarray:</div>
 
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="empty_exercise">CRISPR :</div>
       <div class="file_list">
-        <a class="exercise_output" href="exercises_output/find_closest_crispr_sites_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/find_closest_crispr_sites.bash" target="_blank">Script <small>[.BASH]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/find_closest_crispr_sites.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+        <ol>
+          <li>
+            Export all microarray platforms that are annotated for humans in Ensembl and their associated information.
+          </li>
+          <li>
+            For a given species and microarray platform retrieve all probe to transcript mappings.
+          </li>
+          <li>
+            For the above mappings add the probe to gene information.
+          </li>
+          <li>
+            For a given probe find the coordinates of the genomic locus the probe has been aligned to.
+          </li>
+        </ol>
       </div>
-      <div class="exercise_type">Exercise 3</div>
-      <div style="clear:both"></div>
-    </div>
-
-    <!-- Microarray Exercises-->
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="exercise">Microarrays :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="exercises_output/microarrays1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/microarrays1._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/microarrays1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 1</div>
-      <div style="clear:both"></div>
-    </div>
-
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="empty_exercise">Microarray :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="exercises_output/microarrays2_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/microarrays2._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/microarrays2.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 2</div>
-      <div style="clear:both"></div>
-    </div>
-
-    <div style="margin-top:25px;margin-bottom:20px">
-      <div class="empty_exercise">Microarray :</div>
-      <div class="file_list">
-        <a class="exercise_output" href="exercises_output/microarrays3_output.txt" target="_blank">Output <small>[.TXT]</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_output" href="display_script/microarrays3._pl" target="_blank">&nbsp&nbsp&nbspScript <small>[.PL]&nbsp&nbsp</small></a>
-        <span class="separator">-</span>
-        <a class="exercise_html" href="display_script/microarrays3.shtml" target="_blank">Script display <small>[.HTML]</small></a>
-      </div>
-      <div class="exercise_type">Exercise 3</div>
-      <div style="clear:both"></div>
     </div>
 
 </section>
+
+
+
+
 
     <!-- Footer -->
     <div class="footerdiv" id="footerdiv" style="z-index:2;">

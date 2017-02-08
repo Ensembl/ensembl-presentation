@@ -11,4 +11,9 @@ perl display_script/motif_feature1._pl
 
 perl display_script/regulatory_feature1._pl
 
+perl display_script/wiggletools/mean_signal.bash
+perl display_script/wiggletools/mean_signal_by_regulatory_feature.bash
+perl display_script/wiggletools/regulatory_features_from_chromosome_22.bash
+perl display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.bash
+perl display_script/wiggletools/mean_lung_by_regulatory_feature.bash
 

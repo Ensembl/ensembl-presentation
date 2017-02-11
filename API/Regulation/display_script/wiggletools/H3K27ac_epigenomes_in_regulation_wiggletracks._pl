@@ -12,6 +12,12 @@ Bio::EnsEMBL::Registry->load_registry_from_db(
 
 my $base_path = "ftp://ftp.ensembl.org/pub/current_data_files";
 
+my $db_adaptor = Bio::EnsEMBL::Registry->get_DBAdaptor('homo_sapiens', 'core');
+my $species = $db_adaptor->species;
+
+my $coord_system_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'CoordSystem');
+my $assembly = $coord_system_adaptor->get_default_version;
+
 my $feature_type_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'FeatureType');
 my $feature_type = $feature_type_adaptor->fetch_by_name("H3K27ac");
 
@@ -24,7 +30,7 @@ foreach my $current_result_set (@$result_set_list) {
         . ' has a ChIP-seq assay for ' 
         . $current_result_set->feature_type->name
         . " the wiggletrack is in\n"
-        . $base_path . '/' . $current_result_set->dbfile_path
+        . $base_path . '/' . $species . '/' . $assembly . '/' . $current_result_set->dbfile_path
         . "\n\n";
   }
 }

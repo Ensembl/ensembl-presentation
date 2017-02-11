@@ -12,7 +12,7 @@ Bio::EnsEMBL::Registry->load_registry_from_db(
 
 my $regulatory_feature_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'RegulatoryFeature');
 
-my $regulatory_feature = $regulatory_feature_adaptor->fetch_by_stable_id('ENSG00000139618 ');
+my $regulatory_feature = $regulatory_feature_adaptor->fetch_by_stable_id('ENSR00000060807');
 
 print 'Feature type:    ' . $regulatory_feature->feature_type->name . "\n";
 print 'Slice name:      ' . $regulatory_feature->slice->name. "\n";

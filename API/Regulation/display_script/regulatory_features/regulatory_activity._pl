@@ -12,6 +12,7 @@ Bio::EnsEMBL::Registry->load_registry_from_db(
 
 my $regulatory_build_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'RegulatoryBuild');
 my $regulatory_build = $regulatory_build_adaptor->fetch_current_regulatory_build;
+my $regulatory_feature_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'RegulatoryFeature');
 my $epigenomes_in_regulatory_build = $regulatory_build->get_all_Epigenomes;
 my $regulatory_feature = $regulatory_feature_adaptor->fetch_by_stable_id('ENSR00000060807');
 
@@ -21,9 +22,9 @@ foreach my $current_epigenome (@$epigenomes_in_regulatory_build) {
 
   my $regulatory_activity = $regulatory_feature->regulatory_activity_for_epigenome($current_epigenome);
   print "is "
-      . $current_regulatory_activity->activity 
+      . $regulatory_activity->activity 
       . ' in ' 
-      . $current_regulatory_activity->get_Epigenome->display_label 
+      . $regulatory_activity->get_Epigenome->display_label 
       . "\n";
 }
 

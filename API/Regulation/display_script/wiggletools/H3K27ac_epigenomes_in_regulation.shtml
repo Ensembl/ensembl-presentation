@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link href="../prism.css" rel="stylesheet" />
+  <title>H3K27ac epigenomes in regulation - Ensembl Regulation API workshop - February 2017, Taiwan</title>
+</head>
+<body>
+<script src="../prism.js"></script>
+
+<h2>H3K27ac epigenomes in regulation</h2>
+
+<pre>
+<code class="language-bash">
+<!--#include file="H3K27ac_epigenomes_in_regulation._pl" -->
+</code>
+</pre>
+
+</body>
+</html>

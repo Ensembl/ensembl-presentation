@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Bio::EnsEMBL::Registry;
+
+Bio::EnsEMBL::Registry->load_registry_from_db(
+  -host => 'asiadb.ensembl.org', 
+  -species => 'homo_sapiens',
+  -user => 'anonymous'
+);
+
+my $feature_type_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'FeatureType');
+my $feature_type = $ft_adaptor->fetch_by_name("H3K4me3");
+
+my $result_set_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'ResultSet');
+my $result_set_list = $result_set_adaptor->fetch_all_by_FeatureType($feature_type);
+
+foreach my $current_result_set (@$result_set_list) {
+
+  print $current_result_set->epigenome->name
+      . ' has a ChIP-seq assay for ' 
+      . $current_result_set->feature_type->name
+      . ' the wiggletrack is in '
+      . $current_result_set->dbfile_path
+      . "\n";
+}

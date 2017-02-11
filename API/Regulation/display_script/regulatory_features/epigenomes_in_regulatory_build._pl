@@ -3,11 +3,9 @@
 use strict;
 use warnings;
 use Bio::EnsEMBL::Registry;
-# use Bio::EnsEMBL::Funcgen::DBSQL::DBAdaptor;
 
 Bio::EnsEMBL::Registry->load_registry_from_db(
-  -host => 'asiadb.ensembl.org', # alternatively 'useastdb.ensembl.org'
-#   -host => 'useastdb.ensembl.org', # alternatively 'useastdb.ensembl.org'
+  -host => 'asiadb.ensembl.org', 
   -species => 'homo_sapiens',
   -user => 'anonymous'
 );

@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Bio::EnsEMBL::Registry;
+
+Bio::EnsEMBL::Registry->load_registry_from_db(
+  -host => 'asiadb.ensembl.org', 
+  -species => 'homo_sapiens',
+  -user => 'anonymous'
+);
+
+my $regulatory_feature_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'RegulatoryFeature');
+
+my $regulatory_feature = $regulatory_feature_adaptor->fetch_by_stable_id('ENSG00000139618 ');
+
+print 'Feature type:    ' . $regulatory_feature->feature_type->name . "\n";
+print 'Slice name:      ' . $regulatory_feature->slice->name. "\n";
+print 'Coordinates:     ' . $regulatory_feature->start .' - '. $regulatory_feature->end. "\n";
+

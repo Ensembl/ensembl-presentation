@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link href="../prism.css" rel="stylesheet" />
+  <title>Fetch regulatory feature - Ensembl Regulation API workshop - February 2017, Taiwan</title>
+</head>
+<body>
+<script src="../prism.js"></script>
+
+<h2>Fetch regulatory feature</h2>
+
+<pre>
+<code class="language-perl">
+<!--#include file="fetch_regulatory_feature._pl" -->
+</code>
+</pre>
+
+</body>
+</html>

@@ -116,7 +116,10 @@
           <div style="background-color:#70bdbd;padding-left:5px;font-size:1.2em;color:#FFF;font-weight:bold;border-top-left-radius:6px;border-top-right-radius:6px;margin:0px 2px">Useful links</div>
           <div style="border:1px solid #70bdbd;margin:0px 2px 10px;padding-top:5px;border-bottom-left-radius:6px;border-bottom-right-radius:6px">                                         
             <ul>
-              <li><a href="http://www.ensembl.org" target="_blank">Ensembl website</a></li>       
+              <li><a href="http://www.ensembl.org" target="_blank">Ensembl website</a></li>
+              <li><a href="https://www.youtube.com/user/EnsemblHelpdesk" target="_blank">Outreach youtube channel</a></li>
+              <li><a href="https://youtu.be/8yJHSLdC7BQ?t=5m7s" target="_blank">Webinar: Ensembl Regulation</a></li>
+              <li><a href="https://www.youtube.com/watch?v=LPElKJ4ioPI" target="_blank">Webinar: Genomic features that regulate genes – the Ensembl Regulatory Build</a></li>
             </ul>
             <h4>Slides</h4>
             <ul>
@@ -248,7 +251,7 @@ For every epigenome in the current regulatory build, print the activity that it 
       <p>
       <ol>
         <li>
-          Find all epigenomes in Ensembl for which ChIP-seq data from an H3K27ac assay has been aligned to human.
+          Find all epigenomes in Ensembl for which ChIP-seq data from an H3K27ac assay has been aligned to human and a bigWig file with the enrichment is provided.
           <br />
           Hint:
           <ul>
@@ -257,6 +260,9 @@ For every epigenome in the current regulatory build, print the activity that it 
             </li>
             <li>
               Alignments are stored with a ResultSet object.
+            </li>
+            <li>
+              Consider the dbfile_path method from the ResultSet object. If it is empty, then no bigWig file is provided.
             </li>
           </ul>
         <li>
@@ -283,10 +289,7 @@ For every epigenome in the current regulatory build, print the activity that it 
 
           <ul>
             <li>
-              Consider the dbfile_path method from the ResultSet object.
-            </li>
-            <li>
-              The base directory for external files is: ftp://ftp.ensembl.org/pub/current_data_files
+              The base directory for external files is: ftp://ftp.ensembl.org/pub/current_data_files. The subdirectories after that are the species name and assembly. Then the dbfile_path string returned from the ResultSet object.
             </li>
           </ul>
           

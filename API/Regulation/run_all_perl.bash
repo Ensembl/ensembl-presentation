@@ -1,4 +1,5 @@
 perl display_script/find_crispr_sites_around_gene._pl > display_script/find_crispr_sites_around_gene.txt
+perl display_script/crispr/location_of_crispr_files._pl > display_script/crispr/location_of_crispr_files.txt
 
 perl display_script/microarrays1._pl > display_script/microarrays1.txt
 perl display_script/microarrays2._pl > display_script/microarrays2.txt

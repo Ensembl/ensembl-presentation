@@ -374,23 +374,47 @@ Bash has a sort function that can sort by specific columns.
       <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
       <ol>
         <li>
-          Find the file with the CRISPR sites on the Ensembl ftp site.
+          Find the files with the CRISPR sites for human and mouse on the Ensembl ftp site using the api.
           <br />
           Hint: You can use the CrisprSitesFile object.
         </li>
 
         <li>
-          Find the canonical CRISPR sites within a given genomic locus and store them in a BED file.
+          <p>
+            The CRISPR file is large, so it has been downloaded for you to the virtual machine. It is here: /home/ensembl/data/Crispr/wge_crisprs_grch38.bb
+          </p>
+          <p>
+            Find the canonical CRISPR sites on chromosome 13 from base 32.315.474 to 32.400.266 and store them in a BED file.
+          </p>
+          <p>
+            Hint: 
+            <ul>
+              <li>
+                You can use the program bigBedToBed that is installed on the virtual machine.
+              </li>
+              <li>
+                BigBed files use UCSC names for chromosomes, so the name in the file is not 13 as in Ensembl, but chr13.
+              </li>
+            </ul>
+          </p>
         </li>
 
         <li>
-          Given a gene (‘SERTM1’) find the canonical CRISPR sites within a genomic region 500bp upstream of the transcription start site to 500bp downstream of the transcription end site.
+          Find the canonical CRISPR sites for the gene SERTM1 within a genomic region 500bp upstream of the transcription start site to 500bp downstream of the transcription end site.
         </li>
 
         <li>
-          Find the closest canonical CRISPR site(s) to genomic position on chromosome 4: 121819483 using bedtools closest.
+          Find the closest canonical CRISPR site(s) to genomic position on chromosome 4: 121.819.483 using bedtools closest.
           <br />
-          Hint: First extract all CRISPR sites from the bigBed file in a region 200bp around the location of interest.
+          Hint: 
+            <ul>
+              <li>
+                First extract all CRISPR sites from the bigBed file in a region 200bp around the location of interest.
+              </li>
+              <li>
+                You can use bedtools which is installed on the virtual machine. Look at the bedtools command "closest".
+              </li>
+            </ul>
         </li>
       </ol>
     </div>

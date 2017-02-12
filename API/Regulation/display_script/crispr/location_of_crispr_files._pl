@@ -1,0 +1,32 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Bio::EnsEMBL::Registry;
+
+Bio::EnsEMBL::Registry->load_registry_from_db(
+  -host => 'asiadb.ensembl.org', 
+  -species => 'homo_sapiens',
+  -user => 'anonymous'
+);
+
+my $base_path = "ftp://ftp.ensembl.org/pub/current_data_files";
+
+for my $species ('homo_sapiens', 'mus_musculus') {
+
+  my $db_adaptor = Bio::EnsEMBL::Registry->get_DBAdaptor($species, 'core');
+  my $species = $db_adaptor->species;
+
+  my $coord_system_adaptor = Bio::EnsEMBL::Registry->get_adaptor($species, 'core', 'CoordSystem');
+  my $assembly = $coord_system_adaptor->get_default_version;
+
+  my $crispr_adaptor = Bio::EnsEMBL::Registry->get_adaptor($species, 'funcgen', 'CrisprSitesFile');
+  my $crispr_file = $crispr_adaptor->fetch_file;
+
+  if (! defined $crispr_file) {
+    die('No crispr file configured!');
+  }
+  
+  print "For $species the file can be downloaded here:\n";
+  print $base_path . $crispr_file->file ."\n";  
+}

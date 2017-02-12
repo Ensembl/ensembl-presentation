@@ -1,0 +1,52 @@
+Probe Name: ILMN_1763508
+Transcript ID: ENST00000496266	Matching Details: Matches 5' flank. Matches 7 other transcripts
+Transcript ID: ENST00000409202	Matching Details: Matches exon/5' flank boundary. Matches 7 other transcripts
+Transcript ID: ENST00000485700	Matching Details: Matches 5' flank. Matches 7 other transcripts
+Transcript ID: ENST00000485573	Matching Details: Matches exon/5' flank boundary. Matches 7 other transcripts
+Transcript ID: ENST00000467265	Matching Details: Matches exon/5' flank boundary. Matches 7 other transcripts
+Transcript ID: ENST00000488795	Matching Details: Matches exon/5' flank boundary. Matches 7 other transcripts
+Transcript ID: ENST00000463061	Matching Details: Matches exon/5' flank boundary. Matches 7 other transcripts
+Transcript ID: ENST00000456116	Matching Details: Matches exon/5' flank boundary. Matches 7 other transcripts
+------------------------
+Probe Name: ILMN_1861090
+------------------------
+Probe Name: ILMN_1890175
+Transcript ID: ENST00000418353	Matching Details: Matches exon/3' flank boundary. Maps uniquely to this transcript
+------------------------
+Probe Name: ILMN_1749304
+Transcript ID: ENST00000633881	Matching Details: Matches exon/3' flank boundary. Matches 1 other transcript
+Transcript ID: ENST00000624675	Matching Details: Matches exon/3' flank boundary. Matches 1 other transcript
+------------------------
+Probe Name: ILMN_1894173
+------------------------
+Probe Name: ILMN_1911643
+------------------------
+Probe Name: ILMN_1891089
+------------------------
+Probe Name: ILMN_1859810
+Transcript ID: ENST00000425125	Matching Details: Matches exon. Maps uniquely to this transcript
+------------------------
+Probe Name: ILMN_1843473
+------------------------
+Probe Name: ILMN_1770856
+Transcript ID: ENST00000600349	Matching Details: Matches 3' flank. Matches 3 other transcripts
+Transcript ID: ENST00000600114	Matching Details: Matches 3' flank. Matches 3 other transcripts
+Transcript ID: ENST00000301272	Matching Details: Matches exon/3' flank boundary. Matches 3 other transcripts
+Transcript ID: ENST00000595645	Matching Details: Matches exon/3' flank boundary. Matches 3 other transcripts
+------------------------
+Transcript ID: ENST00000496266	Gene ID: ENSG00000163219
+Transcript ID: ENST00000409202	Gene ID: ENSG00000163219
+Transcript ID: ENST00000485700	Gene ID: ENSG00000163219
+Transcript ID: ENST00000485573	Gene ID: ENSG00000163219
+Transcript ID: ENST00000467265	Gene ID: ENSG00000163219
+Transcript ID: ENST00000488795	Gene ID: ENSG00000163219
+Transcript ID: ENST00000463061	Gene ID: ENSG00000163219
+Transcript ID: ENST00000456116	Gene ID: ENSG00000163219
+Transcript ID: ENST00000418353	Gene ID: ENSG00000232874
+Transcript ID: ENST00000633881	Gene ID: ENSG00000279561
+Transcript ID: ENST00000624675	Gene ID: ENSG00000279561
+Transcript ID: ENST00000425125	Gene ID: ENSG00000234275
+Transcript ID: ENST00000600349	Gene ID: ENSG00000167664
+Transcript ID: ENST00000600114	Gene ID: ENSG00000167664
+Transcript ID: ENST00000301272	Gene ID: ENSG00000167664
+Transcript ID: ENST00000595645	Gene ID: ENSG00000167664

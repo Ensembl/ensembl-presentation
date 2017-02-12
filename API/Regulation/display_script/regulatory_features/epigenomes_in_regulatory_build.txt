@@ -1,0 +1,69 @@
+There are 68 epigenomes in the regulatory build:
+  - Lung
+  - iPS-20b
+  - Fetal Intestine Small
+  - H1-trophoblast
+  - B cells (PB) Roadmap
+  - H1-mesenchymal
+  - iPS DF 19.11
+  - H9
+  - Fetal Thymus
+  - Fetal Muscle Trunk
+  - T cells (PB) Roadmap
+  - H1-neuronal progenitor
+  - Left Ventricle
+  - Spleen
+  - Right Atrium
+  - Fetal Muscle Leg
+  - Small Intestine
+  - Psoas Muscle
+  - Placenta
+  - Monocytes-CD14+ (PB) Roadmap
+  - Fetal Adrenal Gland
+  - Fetal Intestine Large
+  - Gastric
+  - Pancreas
+  - Fetal Stomach
+  - Aorta
+  - Natural Killer cells (PB)
+  - Ovary
+  - iPS DF 6.9
+  - Thymus
+  - neutrophil (VB)
+  - M0 macrophage (CB)
+  - CD4+ ab T cell (VB)
+  - CD14+CD16- monocyte (VB)
+  - naive B cell (VB)
+  - CM CD4+ ab T cell (VB)
+  - M1 macrophage (CB)
+  - CD8+ ab T cell (CB)
+  - HUVEC prol (CB)
+  - EPC (VB)
+  - MSC (VB)
+  - M2 macrophage (VB)
+  - M1 macrophage (VB)
+  - eosinophil (VB)
+  - M0 macrophage (VB)
+  - neutrophil myelocyte (BM)
+  - M2 macrophage (CB)
+  - neutrophil (CB)
+  - erythroblast (CB)
+  - CD14+CD16- monocyte (CB)
+  - HSMM
+  - H1ESC
+  - Osteobl
+  - A549
+  - NHEK
+  - HUVEC
+  - HepG2
+  - HMEC
+  - DND-41
+  - GM12878
+  - IMR90
+  - NHLF
+  - K562
+  - HeLa-S3
+  - NHDF-AD
+  - NH-A
+  - HSMMtube
+  - Monocytes-CD14+

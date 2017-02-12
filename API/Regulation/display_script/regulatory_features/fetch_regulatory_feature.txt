@@ -1,0 +1,3 @@
+Feature type:    Promoter
+Slice name:      chromosome:GRCh38:13:1:114364328:1
+Coordinates:     31846001 - 31847401

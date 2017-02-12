@@ -5,8 +5,7 @@ use warnings;
 use Bio::EnsEMBL::Registry;
 
 Bio::EnsEMBL::Registry->load_registry_from_db(
-  -host => 'asiadb.ensembl.org', 
-  -species => 'homo_sapiens',
+  -host => 'ensembldb.ensembl.org', 
   -user => 'anonymous'
 );
 
@@ -28,5 +27,5 @@ for my $species ('homo_sapiens', 'mus_musculus') {
   }
   
   print "For $species the file can be downloaded here:\n";
-  print $base_path . $crispr_file->file ."\n";  
+  print $base_path . '/' . $species . '/' . $assembly . '/' . $crispr_file->file ."\n";  
 }

@@ -9,7 +9,7 @@ Bio::EnsEMBL::Registry->load_registry_from_db(
   -user => 'anonymous'
 );
 
-my $base_path = "ftp://ftp.ensembl.org/pub/current_data_files";
+my $base_path = "ftp://ftp.ensembl.org/pub/data_files";
 
 for my $species ('homo_sapiens', 'mus_musculus') {
 
@@ -27,5 +27,5 @@ for my $species ('homo_sapiens', 'mus_musculus') {
   }
   
   print "For $species the file can be downloaded here:\n";
-  print $base_path . '/' . $species . '/' . $assembly . '/' . $crispr_file->file ."\n";  
+  print $base_path . '/' . $species . '/' . $assembly .  $crispr_file->file ."\n";  
 }

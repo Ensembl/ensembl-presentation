@@ -10,7 +10,7 @@ Bio::EnsEMBL::Registry->load_registry_from_db(
   -user => 'anonymous'
 );
 
-my $base_path = "ftp://ftp.ensembl.org/pub/current_data_files";
+my $base_path = "ftp://ftp.ensembl.org/pub/data_files";
 
 my $db_adaptor = Bio::EnsEMBL::Registry->get_DBAdaptor('homo_sapiens', 'core');
 my $species = $db_adaptor->species;

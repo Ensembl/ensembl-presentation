@@ -1,73 +1,73 @@
 The Promoter with id ENSR00000060807 is
-is ACTIVE in Lung
-is POISED in iPS-20b
-is POISED in Fetal Intestine Small
-is POISED in H1-trophoblast
-is ACTIVE in B cells (PB) Roadmap
-is POISED in H1-mesenchymal
-is POISED in iPS DF 19.11
-is ACTIVE in H9
-is POISED in Fetal Thymus
-is POISED in Fetal Muscle Trunk
-is POISED in T cells (PB) Roadmap
-is POISED in H1-neuronal progenitor
-is ACTIVE in Left Ventricle
-is ACTIVE in Spleen
-is ACTIVE in Right Atrium
-is POISED in Fetal Muscle Leg
-is ACTIVE in Small Intestine
-is ACTIVE in Psoas Muscle
-is POISED in Placenta
-is ACTIVE in Monocytes-CD14+ (PB) Roadmap
-is POISED in Fetal Adrenal Gland
-is POISED in Fetal Intestine Large
-is ACTIVE in Gastric
-is ACTIVE in Pancreas
-is POISED in Fetal Stomach
-is ACTIVE in Aorta
-is POISED in Natural Killer cells (PB)
-is ACTIVE in Ovary
-is POISED in iPS DF 6.9
-is POISED in Thymus
-is INACTIVE in neutrophil (VB)
-is ACTIVE in M0 macrophage (CB)
-is POISED in CD4+ ab T cell (VB)
-is ACTIVE in CD14+CD16- monocyte (VB)
-is ACTIVE in naive B cell (VB)
-is ACTIVE in CM CD4+ ab T cell (VB)
-is ACTIVE in M1 macrophage (CB)
-is POISED in CD8+ ab T cell (CB)
-is POISED in HUVEC prol (CB)
-is POISED in EPC (VB)
-is ACTIVE in MSC (VB)
-is ACTIVE in M2 macrophage (VB)
-is ACTIVE in M1 macrophage (VB)
-is ACTIVE in eosinophil (VB)
-is ACTIVE in M0 macrophage (VB)
-is POISED in neutrophil myelocyte (BM)
-is ACTIVE in M2 macrophage (CB)
-is ACTIVE in neutrophil (CB)
-is POISED in erythroblast (CB)
-is ACTIVE in CD14+CD16- monocyte (CB)
-is ACTIVE in HSMM
-is POISED in H1ESC
-is ACTIVE in Osteobl
-is POISED in A549
-is POISED in NHEK
-is POISED in HUVEC
-is POISED in HepG2
-is ACTIVE in HMEC
-is POISED in DND-41
-is POISED in GM12878
-is POISED in IMR90
-is ACTIVE in NHLF
-is ACTIVE in K562
-is ACTIVE in HeLa-S3
-is ACTIVE in NHDF-AD
-is POISED in NH-A
-is ACTIVE in HSMMtube
-is ACTIVE in Monocytes-CD14+
+    - ACTIVE in Lung
+    - POISED in iPS-20b
+    - POISED in Fetal Intestine Small
+    - POISED in H1-trophoblast
+    - ACTIVE in B cells (PB) Roadmap
+    - POISED in H1-mesenchymal
+    - POISED in iPS DF 19.11
+    - ACTIVE in H9
+    - POISED in Fetal Thymus
+    - POISED in Fetal Muscle Trunk
+    - POISED in T cells (PB) Roadmap
+    - POISED in H1-neuronal progenitor
+    - ACTIVE in Left Ventricle
+    - ACTIVE in Spleen
+    - ACTIVE in Right Atrium
+    - POISED in Fetal Muscle Leg
+    - ACTIVE in Small Intestine
+    - ACTIVE in Psoas Muscle
+    - POISED in Placenta
+    - ACTIVE in Monocytes-CD14+ (PB) Roadmap
+    - POISED in Fetal Adrenal Gland
+    - POISED in Fetal Intestine Large
+    - ACTIVE in Gastric
+    - ACTIVE in Pancreas
+    - POISED in Fetal Stomach
+    - ACTIVE in Aorta
+    - POISED in Natural Killer cells (PB)
+    - ACTIVE in Ovary
+    - POISED in iPS DF 6.9
+    - POISED in Thymus
+    - INACTIVE in neutrophil (VB)
+    - ACTIVE in M0 macrophage (CB)
+    - POISED in CD4+ ab T cell (VB)
+    - ACTIVE in CD14+CD16- monocyte (VB)
+    - ACTIVE in naive B cell (VB)
+    - ACTIVE in CM CD4+ ab T cell (VB)
+    - ACTIVE in M1 macrophage (CB)
+    - POISED in CD8+ ab T cell (CB)
+    - POISED in HUVEC prol (CB)
+    - POISED in EPC (VB)
+    - ACTIVE in MSC (VB)
+    - ACTIVE in M2 macrophage (VB)
+    - ACTIVE in M1 macrophage (VB)
+    - ACTIVE in eosinophil (VB)
+    - ACTIVE in M0 macrophage (VB)
+    - POISED in neutrophil myelocyte (BM)
+    - ACTIVE in M2 macrophage (CB)
+    - ACTIVE in neutrophil (CB)
+    - POISED in erythroblast (CB)
+    - ACTIVE in CD14+CD16- monocyte (CB)
+    - ACTIVE in HSMM
+    - POISED in H1ESC
+    - ACTIVE in Osteobl
+    - POISED in A549
+    - POISED in NHEK
+    - POISED in HUVEC
+    - POISED in HepG2
+    - ACTIVE in HMEC
+    - POISED in DND-41
+    - POISED in GM12878
+    - POISED in IMR90
+    - ACTIVE in NHLF
+    - ACTIVE in K562
+    - ACTIVE in HeLa-S3
+    - ACTIVE in NHDF-AD
+    - POISED in NH-A
+    - ACTIVE in HSMMtube
+    - ACTIVE in Monocytes-CD14+
 
-real	0m30.895s
-user	0m0.504s
-sys	0m0.064s
+real	2m38.310s
+user	0m0.472s
+sys	0m0.056s

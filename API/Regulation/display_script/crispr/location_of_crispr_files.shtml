@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link href="../prism.css" rel="stylesheet" />
+  <title>Location of crispr files - Ensembl Regulation API workshop - February 2017, Taiwan</title>
+</head>
+<body>
+<script src="../prism.js"></script>
+
+<h2>Location of crispr files</h2>
+
+<pre>
+<code class="language-perl">
+<!--#include file="location_of_crispr_files._pl" -->
+</code>
+</pre>
+
+</body>
+</html>

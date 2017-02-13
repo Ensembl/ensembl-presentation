@@ -1,3 +1,6 @@
-Feature type:    Promoter
-Slice name:      chromosome:GRCh38:13:1:114364328:1
-Coordinates:     31846001 - 31847401
+DBD::mysql::st execute failed: MySQL server has gone away at /home/ensembl/ensembl-api-folder/ensembl/modules/Bio/EnsEMBL/DBSQL/AnalysisAdaptor.pm line 129.
+DBD::mysql::st execute failed: MySQL server has gone away at /home/ensembl/ensembl-api-folder/ensembl/modules/Bio/EnsEMBL/DBSQL/AnalysisAdaptor.pm line 129.
+
+real	2m14.691s
+user	0m0.244s
+sys	0m0.052s

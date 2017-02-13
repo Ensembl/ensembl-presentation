@@ -1,1 +1,5 @@
 Probe: ILMN_1763508	chromosome	2	Start: 68735204	End: 68735253
+
+real	1m12.474s
+user	0m0.596s
+sys	0m0.116s

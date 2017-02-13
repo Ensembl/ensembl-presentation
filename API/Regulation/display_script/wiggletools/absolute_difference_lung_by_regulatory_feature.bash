@@ -18,7 +18,7 @@ wiggletools \
 
 absolute_difference_file=$data_directory/absolute_difference_file.wig
 
-rm $absolute_difference_file
+rm -f $absolute_difference_file
 
 wiggletools \
   write \

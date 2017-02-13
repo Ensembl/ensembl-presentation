@@ -227,7 +227,20 @@ For every epigenome in the current regulatory build, print the activity that it 
           Retrieve all Motif Features that have been annotated in the Regulatory Feature with stable id ‘ENSR00000000667’
         </li>
         <li>
-          If the motif sequence changes due to a mutation how is the relative binding affinity affected? In the above Regulatory Feature you have retrieved one with id ‘759795’. Consider that the motif sequence changes to ’CCCGGCCCCACCCC’.
+          <p>
+          If the motif sequence changes due to a mutation you want to know how this would affect the binding affinity. Computing this is beyond the scope of the course, but the way the score of the binding matrix changes could give a pointer.
+          </p>
+          <p>
+          In the above Regulatory Feature you have retrieved one with id ‘759795’. Compute how the score from the binding matrix changes, if the motif sequence changes to ’CCCGGCCCCACCCC’.
+          </p>
+
+          Hint:
+          <ul>
+            <li>
+              The motif object has a binding_matrix method. This can be used to compute the score from the binding matrix via the "relative_affinity" method.
+            </li>
+          </ul>
+
         </li>
       </ol>
       </div>

@@ -1,3 +1,7 @@
 Relative affinity of the PB0010.1 motif with sequence	CCCGCCCCCACCCC : 0.880994102873579
 Relative affinity of the PB0010.1 motif with sequence	CCCGGCCCCACCCC : 0.757970901005537
                                                 	    ^
+
+real	1m14.079s
+user	0m0.580s
+sys	0m0.160s

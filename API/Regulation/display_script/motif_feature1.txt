@@ -12,3 +12,7 @@ Relative affinity of motif with ID 1075901 from matrix MA0162.2  with sequence C
 Relative affinity of motif with ID 1005913 from matrix MA0337.1  with sequence CCCCCGC : 1
 Relative affinity of motif with ID 759795 from matrix PB0010.1  with sequence CCCGCCCCCACCCC : 0.880994102873579
 Relative affinity of motif with ID 1159410 from matrix MA0162.2  with sequence GGCCCGCCCCCACC : 0.973045700299644
+
+real	1m19.542s
+user	0m0.584s
+sys	0m0.208s

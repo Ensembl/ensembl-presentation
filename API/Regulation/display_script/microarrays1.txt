@@ -168,3 +168,7 @@ Type:   OLIGO
 Vendor: AFFY
 ArrayChip: HTA-2_0 DesignID: HTA-2_0
 
+
+real	1m15.844s
+user	0m0.416s
+sys	0m0.116s

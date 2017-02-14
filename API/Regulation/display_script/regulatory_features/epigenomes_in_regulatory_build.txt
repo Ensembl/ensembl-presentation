@@ -67,3 +67,7 @@ There are 68 epigenomes in the regulatory build:
   - NH-A
   - HSMMtube
   - Monocytes-CD14+
+
+real	2m13.650s
+user	0m0.236s
+sys	0m0.024s

@@ -68,3 +68,7 @@ H1-trophoblast has a ChIP-seq assay for H3K27ac the wiggletrack is in /result_se
 A549 has a ChIP-seq assay for H3K27ac the wiggletrack is in /result_set/085/ersa_signal/bigwig/A549_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
 H9 has a ChIP-seq assay for H3K27ac the wiggletrack is in /result_set/085/ersa_signal/bigwig/H9_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
 H1-mesenchymal has a ChIP-seq assay for H3K27ac the wiggletrack is in /result_set/085/ersa_signal/bigwig/H1_mesenchymal_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+real	7m44.382s
+user	0m1.876s
+sys	0m0.784s

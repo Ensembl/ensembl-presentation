@@ -11,6 +11,11 @@ def request (ext):
   decoded = r.json()
   return decoded;
  
+## List all Epigenomes we currently have in the regulatory build
+ext='/regulatory/species/homo_sapiens/epigenome'
+decoded = request(ext)
+print json.dumps(decoded, indent=4, sort_keys=True)
+
 # Get ENSG for ESPN Gene  
 ext = "/xrefs/symbol/homo_sapiens/espn?"
 decoded = request(ext)
@@ -60,19 +65,27 @@ for motif in decoded:
     print json.dumps(decoded, indent=4, sort_keys=True)
 
   
+## List all Epigenomes we currently have in the regulatory build
+ext='/regulatory/species/homo_sapiens/microarray'
+decoded = request(ext)
+print json.dumps(decoded, indent=4, sort_keys=True)
 
 array = 'HumanWG_6_V2'
 probes = ['ILMN_1763508', 'ILMN_1861090', 'ILMN_1890175', 'ILMN_1749304', 'ILMN_1894173', 'ILMN_1911643', 'ILMN_1891089', 'ILMN_1859810', 'ILMN_1843473', 'ILMN_1770856']
-
 for probe in probes:
+  print probe
   ext='/regulatory/species/homo_sapiens/microarray/%s/probe/%s?content-type=application/json;gene=1;transcript=1' %(array, probe)
   decoded  = request(ext);
-  print ext
-  print json.dumps(decoded, indent=4, sort_keys=True)
-  if  decoded[0]['transcripts']:
-    print decoded[0]['transcripts'][0]['display_id']
-
-
-
+#  print json.dumps(decoded, indent=4, sort_keys=True)
+  if decoded:
+    if  decoded[0]['transcripts']:
+      for tr in decoded[0]['transcripts']:
+#      tmp = decoded[0]['transcripts'][0]
+        print "[%s:%s-%s] Description: %s. Transcript: %s Gene: %s (%s)" %(decoded[0]['seq_region_name'], decoded[0]['start'], decoded[0]['end'], tr['description'], tr['display_id'], tr['gene']['stable_id'], tr['gene']['external_name'])
+    else:
+      print "No transcripts mappings found"
+  else:
+    print "No transcripts mappings found"
+    
 
 

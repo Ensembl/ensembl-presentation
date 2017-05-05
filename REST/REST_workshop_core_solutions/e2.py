@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # Extract the stable id from the dictionary and print
     print "Stable id: {}".format(gene['id'])
 
-    # Loop through and print the transcripts
+    # Loop through the transcripts and add them to our request list
     transcripts = []
     for transcript in gene['Transcript']:
         transcripts.append(transcript['id'])

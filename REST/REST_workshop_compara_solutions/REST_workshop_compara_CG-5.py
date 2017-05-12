@@ -4,7 +4,7 @@ server = "https://rest.ensembl.org"
 
 # Family endpoint exercises
 
-# Q5: Get the information for uniprot members of families predicted for the human gene with the symbol HOXD4-001. Show no alignments and no sequences
+# CG-5: Get the information for uniprot members of families predicted for the human gene with the symbol HOXD4-001. Show no alignments and no sequences
 
 ext = "/family/member/symbol/human/HOXD4-001?aligned=0;sequence=none;member_source=uniprot"
 r = requests.get(server+ext, headers={ "Content-Type" : "application/json"})

@@ -4,7 +4,7 @@ server = "https://rest.ensembl.org"
 
 # Gene tree endpoint exercises
 
-# Q8: Get the gene tree predicted for the human gene with the symbol HOXD4-001 in simple nh format.
+# CG-8: Get the gene tree predicted for the human gene with the symbol HOXD4-001 in simple nh format.
 
 ext = "/genetree/member/symbol/human/HOXD4-001?"
 r = requests.get(server+ext, headers={ "Content-Type" : "text/x-nh"})

@@ -4,14 +4,13 @@ server = "https://rest.ensembl.org"
 
 # Family endpoint exercises
 
-# Q3a: Get the information for the family with the stable id PTHR10740_SF4
+# CG-4: Get the information for families predicted for the human gene ENSG00000283087. What do you notice?
 
-ext = "/family/id/PTHR10740_SF4?"
+ext = "/family/member/id/ENSG00000283087?"
 r = requests.get(server+ext, headers={ "Content-Type" : "application/json"})
 if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
 print json.dumps(decoded, indent=4, sort_keys=True)
-print ("\n------->>>> Q1a Get the information for the family with the stable id PTHR10740_SF4!!!!! \n\n\n\n")
-
+print ("\n------->>>>Q4 Get the information for families predicted for the human gene ENSG00000283087. What do you notice?!!!!! \n\n\n\n")

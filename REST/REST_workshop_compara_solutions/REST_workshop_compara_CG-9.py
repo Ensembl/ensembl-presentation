@@ -4,7 +4,7 @@ server = "https://rest.ensembl.org"
 
 # cafe tree endpoint exercises
 
-# Q9: Get the cafe tree information for the genetree with the stable id ENSGT00390000003602. output should be in the json format.
+# CG-9: Get the cafe tree information for the genetree with the stable id ENSGT00390000003602. output should be in the json format.
 
 ext = "/cafe/genetree/id/ENSGT00390000003602?"
 r = requests.get(server+ext, headers={ "Content-Type" : "application/json"})

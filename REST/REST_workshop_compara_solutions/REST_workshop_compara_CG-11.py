@@ -4,7 +4,7 @@ server = "https://rest.ensembl.org"
 
 # cafe tree endpoint exercises
 
-# Q11: Get the cafe tree information for the gene tree predicted for the human gene with the symbol HOXD4-001
+# Q CG-11: Get the cafe tree information for the gene tree predicted for the human gene with the symbol HOXD4-001
 
 ext = "/cafe/genetree/member/symbol/homo_sapiens/HOXD4-001?"
 r = requests.get(server+ext, headers={ "Content-Type" : "text/x-nh"})

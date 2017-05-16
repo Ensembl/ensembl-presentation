@@ -12,5 +12,5 @@ if not r.ok:
   r.raise_for_status()
   sys.exit() 
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>>Q9 Get the cafe tree information for the genetree with the stable id ENSGT00390000003602. output should be in the json format.!!!!! \n\n\n")

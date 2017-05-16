@@ -12,7 +12,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>> Q1 Get in json format the LastZ pairwise alignment for taeniopygia_guttata V gallus_gallus for region 2:106041430-106041480:1!!!!! \n\n\n\n")
 
 
@@ -24,7 +24,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>> Q2a Get in json format the aligned human mammal epo alignment for region 2:106040000-106040050:1!!!!! \n\n\n\n")
 
 
@@ -55,7 +55,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>> Q 3a Get the information for the family with the stable id PTHR10740_SF4!!!!! \n\n\n\n")
 
 
@@ -67,7 +67,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>>Q3b Get the aligned cdna sequences for only the ensembl members of the family with the stable id PTHR10740_SF4!!!!! \n\n\n\n")
 
 
@@ -79,7 +79,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>>Q4 Get the information for families predicted for the human gene ENSG00000283087. What do you notice?!!!!! \n\n\n\n")
 
 
@@ -91,7 +91,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit() 
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>>Q5 Get the information for uniprot members of families predicted for the human gene with the symbol HOXD4-001. show no alignments and no sequences!!!!! \n\n\n\n")
 
 
@@ -159,7 +159,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit() 
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>>Q9 Get the cafe tree information for the genetree with the stable id ENSGT00390000003602. output should be in the json format.!!!!! \n\n\n")
 
 
@@ -196,11 +196,6 @@ print ("\n------->>>>Q11 Get the cafe tree information for the gene tree predict
 
 
 
-
-
-
-
-
 # Homology endpoint exercises
 
 # Q CG-12a: Get all the homologues for the human gene ENSG00000229314 in xml format
@@ -222,7 +217,7 @@ if not r.ok:
   r.raise_for_status()
   sys.exit()
 decoded = r.json()
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 print ("\n------->>>>Q12b Return only the unaligned chimp and mouse homologs for the gene given in 1a in json format. !!!!! \n\n\n")
 
 
@@ -235,13 +230,3 @@ if not r.ok:
   sys.exit()
 print (r.text)
 print ("\n------->>>>Q13 Get all the orthologs human gene with the symbol HOXD4-001 in orthoxml format. !!!!! \n\n\n")
-
-
-
-
-
-
-
-
-
-

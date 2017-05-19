@@ -2,8 +2,8 @@ import requests, sys
 import pprint
 
 '''
-Use the /lookup endpoint to find IRAK4, print all transcript stable id(s)
-Then find the associated sequence
+Use the /lookup endpoint to find IRAK4, and map the coordinates for
+the gene to the GRCh37 assembly.
 '''
 
 server = "http://rest.ensembl.org"

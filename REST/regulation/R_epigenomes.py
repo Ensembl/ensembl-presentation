@@ -16,7 +16,7 @@ def request (ext):
 ## List all Epigenomes we currently have in the regulatory build
 ext='/regulatory/species/homo_sapiens/epigenome'
 decoded = request(ext)
-print(json.dumps(decoded, indent=4, sort_keys=True))
+#print(json.dumps(decoded, indent=4, sort_keys=True))
 
 
 # Print information about each epigenome
@@ -27,21 +27,18 @@ def efo_request (ext):
     return
   decoded = r.json()
   return decoded;
-for r in decoded:
-  if not r['efo_id']:
-    print("No EFO ID assigned: %s\n"%(r['scientific_name']))
-    continue
-  
-  print("Scientific Name: %s(%s)" %(r['scientific_name'],r['efo_id']))
-# Query EFO 
-  ext='ols/api/ontologies/efo/terms?obo_id=%s' %(r['efo_id'])
+
+def fetch_efo(efo_id):
+  ext='ols/api/ontologies/efo/terms?obo_id=%s' %(efo_id)
   efo_decoded = efo_request(ext)
   if not efo_decoded:
-    print("No EFO ID assigned: %s\n"%(r['efo_id']))
-    continue
+    print("No EFO ID assigned: %s\n"%(efo_id))
+    return
+  return efo_decoded
 
-  print("Link(URL): %s" %(efo_decoded['_links']['self']['href']))
-  for t in efo_decoded['_embedded']['terms']:
+def print_efo (efo):
+  print("Link(URL): %s" %(efo['_links']['self']['href']))
+  for t in efo['_embedded']['terms']:
     print("Link(IRI): %s" %(t['iri']))
     if t['description']:
       for d in t['description']:
@@ -51,3 +48,13 @@ for r in decoded:
   print()
 
 
+for r in decoded:
+  if not r['efo_id']:
+    print("No EFO ID assigned: %s\n"%(r['scientific_name']))
+    continue
+  efo = fetch_efo(r['efo_id'])
+  if not efo:
+    print("No record")
+    continue
+  print_efo(efo)
+  #print(json.dumps(efo, indent=4, sort_keys=True))

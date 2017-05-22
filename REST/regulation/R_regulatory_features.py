@@ -28,6 +28,7 @@ print(json.dumps(decoded, indent=4, sort_keys=True))
 ensg = decoded[0]['id']
 ext = "/lookup/id/%s?condensed=1" %ensg
 decoded = request(ext)
+print("Getting coordinates")
 print(json.dumps(decoded, indent=4, sort_keys=True))
 
 # Get region 1000bp upstream  

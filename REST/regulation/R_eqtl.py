@@ -59,7 +59,7 @@ def parse_variant_phenotypes(rs, var):
 ## List Returns all tissues currently available in Homo sapiens
 ext='/eqtl/tissue/homo_sapiens'
 decoded = request(ext)
-print json.dumps(decoded, indent=4, sort_keys=True)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 
 # Examine a variant  
 variant = 'rs2736340'

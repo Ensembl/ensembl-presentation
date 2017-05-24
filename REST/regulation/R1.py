@@ -1,6 +1,6 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 import requests, json, sys
-# server = "http://test.rest.ensembl.org"
+#server = "http://test.rest.ensembl.org"
 server = "http://0:3000/"
 
 # Used for resolving requests and decode the JSON
@@ -28,6 +28,7 @@ def efo_request (ext):
   decoded = r.json()
   return decoded;
 
+# Fetch efo, including error catching 
 def fetch_efo(efo_id):
   ext='ols/api/ontologies/efo/terms?obo_id=%s' %(efo_id)
   efo_decoded = efo_request(ext)
@@ -36,6 +37,7 @@ def fetch_efo(efo_id):
     return
   return efo_decoded
 
+# Pretty printing of EFO  
 def print_efo (efo):
   print("Link(URL): %s" %(efo['_links']['self']['href']))
   for t in efo['_embedded']['terms']:
@@ -57,4 +59,3 @@ for r in decoded:
     print("No record")
     continue
   print_efo(efo)
-  #print(json.dumps(efo, indent=4, sort_keys=True))

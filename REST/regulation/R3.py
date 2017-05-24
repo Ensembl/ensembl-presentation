@@ -1,12 +1,13 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 import requests, json, sys, operator
-from collections import defaultdict
 from builtins import *
-from pprint import pprint
 from collections import defaultdict
 
-server = "http://rest.ensembl.org"
+# server = "http://test.rest.ensembl.org"
+server = "http://0:3000/"
 
+
+# Used for storing information about the tissue
 class Tissue:
   def __init__(self, tissue, rec):
     self.tissue           = tissue
@@ -24,7 +25,7 @@ class Tissue:
     # Best hits first
     self.sig_hits_sorted = (sorted(self.sig_hits, key=lambda sig_hits_sorted: sig_hits_sorted) )
 
-
+# Fetch descriptions for gene using the xref endpoint
 def get_descriptions (ensid):
   ext='/xrefs/id/%s' %(ensid)
   decoded = request(ext)
@@ -42,7 +43,7 @@ def request (ext):
   decoded = r.json()
   return decoded;
 
-
+# get genomic location, most severe consequence and traits
 def parse_variant_phenotypes(rs, var):
   r=defaultdict(list)
   r['genomic_location']       = var['mappings'][0]['location']
@@ -66,8 +67,10 @@ variant = 'rs2736340'
 # Generic information
 ext='/variation/human/%s?phenotypes=1' %(variant)
 decoded = request(ext)
-#print(json.dumps(decoded, indent=4, sort_keys=True))
+
+# genomic location, most severe consequence and traits   
 r = parse_variant_phenotypes(variant, decoded)
+print(json.dumps(r, indent=4, sort_keys=True))
   
 # Find Regulatory Features in this area
 ext='/overlap/region/human/%s?feature=regulatory' %(r['genomic_location'])

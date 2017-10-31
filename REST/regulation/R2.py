@@ -1,7 +1,7 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 import requests, json, sys
-# server = "http://test.rest.ensembl.org"
-server = "http://0:3000/"
+
+server = "http://rest.ensembl.org"
 
 
 # Used for resolving requests and decode the JSON

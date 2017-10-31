@@ -1,4 +1,4 @@
-import requests, sys
+import requests, sys, json
 import pprint
 
 '''
@@ -25,4 +25,5 @@ if __name__ == "__main__":
     # Fetch the record for the gene IRAK4
     gene = fetch_json(server, lookup_endpoint.format('IRAK4'))
 
-    pprint.pprint(gene)
+print(json.dumps(gene, indent=4, sort_keys=True))
+    #pprint.pprint(gene)

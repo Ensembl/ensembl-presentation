@@ -1,10 +1,9 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
-import requests, json, sys, operator
+import requests, json, sys, operator, pprint
 from builtins import *
 from collections import defaultdict
 
-# server = "http://test.rest.ensembl.org"
-server = "http://0:3000/"
+server = "http://rest.ensembl.org"
 
 
 # Used for storing information about the tissue
@@ -70,7 +69,8 @@ decoded = request(ext)
 
 # genomic location, most severe consequence and traits   
 r = parse_variant_phenotypes(variant, decoded)
-print(json.dumps(r, indent=4, sort_keys=True))
+pprint.pprint(r)
+#print(json.dumps(r, indent=4, sort_keys=True))
   
 # Find Regulatory Features in this area
 ext='/overlap/region/human/%s?feature=regulatory' %(r['genomic_location'])

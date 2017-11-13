@@ -1,16 +1,11 @@
-import requests, sys, json
-server = "https://rest.ensembl.org"
-
+import json, ensembl_rest
+server = "http://rest.ensembl.org"
 
 # cafe tree endpoint exercises
 
-# Q CG-11: Get the cafe tree information for the gene tree predicted for the human gene with the symbol HOXD4-001
+# Q CG-11: Get the cafe tree information for the gene tree predicted for the human gene with the symbol HOXD4-201
 
-ext = "/cafe/genetree/member/symbol/homo_sapiens/HOXD4-001?"
-r = requests.get(server+ext, headers={ "Content-Type" : "text/x-nh"})
-if not r.ok:
-  r.raise_for_status()
-  sys.exit()
-print (r.text)
-print ("\n------->>>>Q11 Get the cafe tree information for the gene tree predicted for the human gene with the symbol HOXD4-001!!!!! \n\n\n\n")
-
+ext = "/cafe/genetree/member/symbol/homo_sapiens/HOXD4-201"
+content_type = 'text/x-nh'
+endpoint = ensembl_rest.get_endpoint(server, ext, content_type)
+print (endpoint)

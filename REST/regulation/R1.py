@@ -1,43 +1,38 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
-import requests, json, sys
+import requests, json, sys, ensembl_rest
 
 server = "http://rest.ensembl.org"
 
-# Used for resolving requests and decode the JSON
-def request (ext):
-  r = requests.get(server+ext, headers={ "Content-Type" : "application/json"})
-  if not r.ok:
-    r.raise_for_status()
-    sys.exit()
-  decoded = r.json()
-  return decoded;
-
  
 ## List all Epigenomes we currently have in the regulatory build
-ext='/regulatory/species/homo_sapiens/epigenome'
-decoded = request(ext)
+endpoint='/regulatory/species/homo_sapiens/epigenome'
+decoded = ensembl_rest.get_endpoint(server, endpoint, 'application/json')
 #print(json.dumps(decoded, indent=4, sort_keys=True))
 
 
-# Print information about each epigenome
-efo_server = "http://www.ebi.ac.uk/"
+"""
+  Fetch from EFO
+"""
+efo_endpoint = "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms?obo_id="
 def efo_request (ext):
-  r = requests.get(efo_server+ext, headers={ "Content-Type" : "application/json"})
+  r = requests.get(ext, headers={ "Content-Type" : "application/json"})
   if not r.ok:
-    return
+    return r.status_code
   decoded = r.json()
   return decoded;
 
-# Fetch efo, including error catching 
-def fetch_efo(efo_id):
-  ext='ols/api/ontologies/efo/terms?obo_id=%s' %(efo_id)
-  efo_decoded = efo_request(ext)
-  if not efo_decoded:
-    print("No EFO ID assigned: %s\n"%(efo_id))
-    return
-  return efo_decoded
+"""
+  Add HTTP status reason to status id
+"""
+def http_to_string(http_status):
+  reason = requests.status_codes._codes[http_status]
+  string = "HTTP status code: %s. HTTP Reason: %s" %(http_status, reason) 
+  return string 
 
-# Pretty printing of EFO  
+
+"""
+  Pretty printing of EFO  
+"""
 def print_efo (efo):
   print("Link(URL): %s" %(efo['_links']['self']['href']))
   for t in efo['_embedded']['terms']:
@@ -50,12 +45,28 @@ def print_efo (efo):
   print()
 
 
+"""
+  main
+"""
 for r in decoded:
+
+  print("Epigenome name: %s" %r['name'])
   if not r['efo_id']:
     print("No EFO ID assigned: %s\n"%(r['scientific_name']))
     continue
-  efo = fetch_efo(r['efo_id'])
+
+  ext =efo_endpoint+r['efo_id']
+  efo = efo_request(ext)
   if not efo:
-    print("No record")
+    print("No EFO ID assigned: %s\n"%(efo_id))
     continue
+
+  if type(efo) is int:
+    http_string = http_to_string(efo);
+    print("!!REST Error: efo_id [%s] %s "%(r['efo_id'], http_string) )
+    continue
+
   print_efo(efo)
+
+
+  

@@ -1,5 +1,5 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
-import requests, json, sys, operator, pprint
+import requests, json, sys, operator, ensembl_rest
 from builtins import *
 from collections import defaultdict
 
@@ -26,25 +26,17 @@ class Tissue:
 
 # Fetch descriptions for gene using the xref endpoint
 def get_descriptions (ensid):
-  ext='/xrefs/id/%s' %(ensid)
-  decoded = request(ext)
+  request='/xrefs/id/%s' %(ensid)
+  decoded = ensembl_rest.get_endpoint(server, request)
   for xref in decoded:
     if (xref['description']) and (xref['dbname']):
       print("DB: %s\tDescription: %s" %(xref['dbname'], xref['description'] ))
 
 
-# Used for resolving requests and decode the JSON
-def request (ext):
-  r = requests.get(server+ext, headers={ "Content-Type" : "application/json"})
-  if not r.ok:
-    r.raise_for_status()
-    sys.exit()
-  decoded = r.json()
-  return decoded;
-
-# get genomic location, most severe consequence and traits
+# get genomic location and most severe consequence 
+# Add all traits 
 def parse_variant_phenotypes(rs, var):
-  r=defaultdict(list)
+  r = defaultdict(list)
   r['genomic_location']       = var['mappings'][0]['location']
   r['most_severe_consequence']= var['most_severe_consequence']
   
@@ -56,34 +48,34 @@ def parse_variant_phenotypes(rs, var):
     r['trait'].append(n)
   return r
 
-## List Returns all tissues currently available in Homo sapiens
-ext='/eqtl/tissue/homo_sapiens'
-decoded = request(ext)
-print (json.dumps(decoded, indent=4, sort_keys=True))
+"""
+  Main
+"""
 
-# Examine a variant  
+
+# 1. Using the variation endpoint retrieve all information about the variant, including phenotypes, their most severe consequence and traits.  
 variant = 'rs2736340'
-# Generic information
-ext='/variation/human/%s?phenotypes=1' %(variant)
-decoded = request(ext)
-
-# genomic location, most severe consequence and traits   
-r = parse_variant_phenotypes(variant, decoded)
-pprint.pprint(r)
-#print(json.dumps(r, indent=4, sort_keys=True))
+request ='/variation/human/%s?phenotypes=1' %(variant)
+decoded = ensembl_rest.get_endpoint(server, request)
+result  = parse_variant_phenotypes(variant, decoded)
+print(json.dumps(result, indent=4, sort_keys=True))
   
-# Find Regulatory Features in this area
-ext='/overlap/region/human/%s?feature=regulatory' %(r['genomic_location'])
-decoded = request(ext)
+# 2. Find where the variant is located and if it overlaps any regulatory feature
+request='/overlap/region/human/%s?feature=regulatory' %(result['genomic_location'])
+decoded = ensembl_rest.get_endpoint(server, request)
 print(json.dumps(decoded, indent=4, sort_keys=True))
-
 
 
 # Look for the SNP in a specific specific tissue
 tissue='Whole_Blood'
-ext='/eqtl/variant_name/homo_sapiens/%s?statistic=p-value;tissue=%s;' %(variant, tissue)
-decoded = request(ext)
+request='/eqtl/variant_name/homo_sapiens/%s?statistic=p-value;tissue=%s;' %(variant, tissue)
+decoded = ensembl_rest.get_endpoint(server, request)
 #print(json.dumps(decoded, indent=4, sort_keys=True))
+
+# 4. List Returns all tissues currently available in Homo sapiens
+request='/eqtl/tissue/homo_sapiens'
+decoded = ensembl_rest.get_endpoint(server, request)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 
 t = Tissue(tissue, decoded)
 for k, v in t.sig_hits_sorted:

@@ -3,17 +3,11 @@ import requests, json, sys, ensembl_rest
 
 server = "http://rest.ensembl.org"
 
- 
-## List all Epigenomes we currently have in the regulatory build
-endpoint='/regulatory/species/homo_sapiens/epigenome'
-decoded = ensembl_rest.get_endpoint(server, endpoint, 'application/json')
-#print(json.dumps(decoded, indent=4, sort_keys=True))
-
 
 """
+  Carla
   Fetch from EFO
 """
-efo_endpoint = "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms?obo_id="
 def efo_request (ext):
   r = requests.get(ext, headers={ "Content-Type" : "application/json"})
   if not r.ok:
@@ -22,9 +16,10 @@ def efo_request (ext):
   return decoded;
 
 """
+  Carla
   Add HTTP status reason to status id
 """
-def http_to_string(http_status):
+def http_status_to_string(http_status_code):
   reason = requests.status_codes._codes[http_status]
   string = "HTTP status code: %s. HTTP Reason: %s" %(http_status, reason) 
   return string 
@@ -48,21 +43,27 @@ def print_efo (efo):
 """
   main
 """
+
+# 1. List all Epigenomes available in Ensembl Regulation
+endpoint='/regulatory/species/homo_sapiens/epigenome'
+decoded = ensembl_rest.get_endpoint(server, endpoint, 'application/json')
+
+# 2. Find additional information (where available) for each epigenome using the Ontology Lookup Service 
+efo_endpoint = "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms?obo_id="
 for r in decoded:
 
   print("Epigenome name: %s" %r['name'])
+  # No EFO ID assigned to this epigenome
   if not r['efo_id']:
     print("No EFO ID assigned: %s\n"%(r['scientific_name']))
     continue
 
-  ext =efo_endpoint+r['efo_id']
-  efo = efo_request(ext)
-  if not efo:
-    print("No EFO ID assigned: %s\n"%(efo_id))
-    continue
+  request = efo_endpoint+r['efo_id']
+  efo     = efo_request(request)
 
+  # if the request is not ok, an status code (integer) will be returned
   if type(efo) is int:
-    http_string = http_to_string(efo);
+    http_string = http_status_to_string(efo);
     print("!!REST Error: efo_id [%s] %s "%(r['efo_id'], http_string) )
     continue
 

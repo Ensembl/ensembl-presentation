@@ -4,10 +4,17 @@ import requests, json, sys, ensembl_rest
 server = "http://rest.ensembl.org"
 
 
-## List all Microarrays we currently have in the regulatory build
+## Export all microarray platforms that are annotated for humans in Ensembl and their associated information.
 request='/regulatory/species/homo_sapiens/microarray'
-#decoded = ensembl_rest.get_endpoint(server, request)
-#print(json.dumps(decoded, indent=4, sort_keys=True))
+decoded = ensembl_rest.get_endpoint(server, request)
+print(json.dumps(decoded, indent=4, sort_keys=True))
+
+"""
+  You have performed a microarray experiment with the array HumanWG_6_V2. The following probes gave you a positive signal: 
+  ILMN_1763508, ILMN_1861090, ILMN_1890175, ILMN_1749304, ILMN_1894173, ILMN_1911643, ILMN_1891089, ILMN_1859810, ILMN_1843473,  ILMN_1770856
+    a) Which transcripts do they map to? 
+    b) Which genes do these transcripts belong to?
+"""
 
 # Transcript and gene mappings for different probes
 array = 'HumanWG_6_V2'

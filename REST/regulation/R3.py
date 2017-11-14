@@ -1,37 +1,21 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
-import requests, json, sys, operator, ensembl_rest
+import requests, json, sys, operator, ensembl_rest, pprint
 from builtins import *
 from collections import defaultdict
 
 server = "http://rest.ensembl.org"
 
 
-# Used for storing information about the tissue
-class Tissue:
-  def __init__(self, tissue, rec):
-    self.tissue           = tissue
-    self.rec              = rec
-    self.hits             = []
-    self.sig_hits         = []
-    self.sig_hits_sorted  = []
-
-    # Load data into array, created subset with significant hits
-    for hit in self.rec:
-      self.hits.append((hit['value'], hit['gene']))
-      if hit['value'] < 0.000005:
-        self.sig_hits.append((hit['value'],hit['gene']))
-    
-    # Best hits first
-    self.sig_hits_sorted = (sorted(self.sig_hits, key=lambda sig_hits_sorted: sig_hits_sorted) )
-
 # Fetch descriptions for gene using the xref endpoint
 def get_descriptions (ensid):
   request='/xrefs/id/%s' %(ensid)
   decoded = ensembl_rest.get_endpoint(server, request)
+  desc = []
   for xref in decoded:
     if (xref['description']) and (xref['dbname']):
-      print("DB: %s\tDescription: %s" %(xref['dbname'], xref['description'] ))
-
+      string = "DB: %s\tDescription: %s" %(xref['dbname'], xref['description'] )
+      desc.append(string)
+  return desc
 
 # get genomic location and most severe consequence 
 # Add all traits 
@@ -40,7 +24,7 @@ def parse_variant_phenotypes(rs, var):
   r['genomic_location']       = var['mappings'][0]['location']
   r['most_severe_consequence']= var['most_severe_consequence']
   
-  trait={}
+  trait = {}
   for p in var['phenotypes']:
     trait[p['trait']] = 1;
   
@@ -65,63 +49,42 @@ request='/overlap/region/human/%s?feature=regulatory' %(result['genomic_location
 decoded = ensembl_rest.get_endpoint(server, request)
 print(json.dumps(decoded, indent=4, sort_keys=True))
 
-# 4. List Returns all tissues currently available in Homo sapiens
+
+# 3. List Returns all tissues currently available in Homo sapiens
 request='/eqtl/tissue/homo_sapiens'
 decoded = ensembl_rest.get_endpoint(server, request)
 print (json.dumps(decoded, indent=4, sort_keys=True))
 
-# Look for the SNP in a specific specific tissue
+# 4. 
+#  Rheumatoid arthritis, SYSTEMIC LUPUS ERYTHEMATOSUS are auto-immune diseaeses. Kawasaki disease is a rare childhood illness that affects the blood vessels. 
+#  Choose Whole_Blood ase tissue for the next step 
+
+# Given the phenotypes retrieved above, select the most relevant tissue.
+# Find all genes associated with the genomic variant of interest (p-value <0.00005)
+# List their descriptions (xref)
+
 tissue='Whole_Blood'
 request='/eqtl/variant_name/homo_sapiens/%s?statistic=p-value;tissue=%s;' %(variant, tissue)
 decoded = ensembl_rest.get_endpoint(server, request)
 #print(json.dumps(decoded, indent=4, sort_keys=True))
 
+# Only keep significant hits(p-value <0.00005)
+sig_hits = []
+for hit in decoded:
+  if hit['value'] < 0.000005:
+    sig_hits.append((hit['value'],hit['gene']))
 
-t = Tissue(tissue, decoded)
-for k, v in t.sig_hits_sorted:
-  print("Gene: %s\tp-value: %s" %(v, k) )
-  get_descriptions(v)
+# Best hits first
+sig_hits_sorted = (sorted(sig_hits, key=lambda sig_hits_sorted: sig_hits_sorted) )
+ 
+# print everything
+for pvalue, gene in sig_hits_sorted:
+  print("Gene: %s\tp-value: %s" %(gene, pvalue) )
+  descs = get_descriptions(gene)
+  for string in descs:
+    print("\t%s" %string)
   print()
-#  print(json.dumps(decoded, indent=4, sort_keys=True))
 
 
   
 
-"""
-{
-  "MAF": 0.361422, 
-    "ambiguity": "Y", 
-    "ancestral_allele": "C", 
-    "evidence": [
-      "Frequency", 
-    "HapMap", 
-    "1000Genomes", 
-    "Cited", 
-    "Phenotype_or_Disease"
-      ], 
-    "mappings": [
-    {
-      "allele_string": "C/T", 
-      "assembly_name": "GRCh38", 
-      "coord_system": "chromosome", 
-      "end": 11486464, 
-      "location": "8:11486464-11486464", 
-      "seq_region_name": "8", 
-      "start": 11486464, 
-      "strand": 1
-    }
-  ], 
-    "minor_allele": "T", 
-    "most_severe_consequence": "regulatory_region_variant", 
-    "name": "rs2736340", 
-    "phenotypes": [
-    {
-      "genes": "BLK", 
-      "pvalue": "3.00e-7", 
-      "risk_allele": "T", 
-      "source": "NHGRI-EBI GWAS catalog", 
-      "study": "PMID:21408207", 
-      "trait": "SYSTEMIC LUPUS ERYTHEMATOSUS", 
-      "variants": "rs2736340"
-    }, 
-"""

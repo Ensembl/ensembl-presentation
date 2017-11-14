@@ -4,25 +4,6 @@ import requests, json, sys, ensembl_rest
 server = "http://rest.ensembl.org"
 
 
-"""
-  Carla
-  Fetch from EFO
-"""
-def efo_request (ext):
-  r = requests.get(ext, headers={ "Content-Type" : "application/json"})
-  if not r.ok:
-    return r.status_code
-  decoded = r.json()
-  return decoded;
-
-"""
-  Carla
-  Add HTTP status reason to status id
-"""
-def http_status_to_string(http_status_code):
-  reason = requests.status_codes._codes[http_status_code]
-  string = "HTTP status code: %s. HTTP Reason: %s" %(http_status_code, reason) 
-  return string 
 
 
 """
@@ -59,11 +40,11 @@ for r in decoded:
     continue
 
   request = efo_endpoint+r['efo_id']
-  efo     = efo_request(request)
+  efo     = ensembl_rest.ensembl_rest.get_endpoint_efo(request)
 
   # if the request is not ok, an status code (integer) will be returned
   if type(efo) is int:
-    http_string = http_status_to_string(efo);
+    http_string = ensembl_rest.http_status_to_string(efo);
     print("!!REST Error: efo_id [%s] %s "%(r['efo_id'], http_string) )
     continue
 

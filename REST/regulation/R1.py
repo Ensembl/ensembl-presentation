@@ -40,7 +40,7 @@ for r in decoded:
     continue
 
   request = efo_server+r['efo_id']
-  efo     = ensembl_rest.ensembl_rest.get_endpoint_efo(efo_server, request)
+  efo     = ensembl_rest.get_endpoint_efo(efo_server, request)
 
   # if the request is not ok, an status code (integer) will be returned
   if type(efo) is int:

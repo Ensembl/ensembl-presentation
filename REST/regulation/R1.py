@@ -39,7 +39,7 @@ for r in decoded:
     print("No EFO ID assigned: %s\n"%(r['scientific_name']))
     continue
 
-  request = efo_endpoint+r['efo_id']
+  request = efo_server+r['efo_id']
   efo     = ensembl_rest.ensembl_rest.get_endpoint_efo(efo_server, request)
 
   # if the request is not ok, an status code (integer) will be returned

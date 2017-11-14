@@ -30,7 +30,7 @@ endpoint='/regulatory/species/homo_sapiens/epigenome'
 decoded = ensembl_rest.get_endpoint(server, endpoint, 'application/json')
 
 # 2. Find additional information (where available) for each epigenome using the Ontology Lookup Service 
-efo_endpoint = "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms?obo_id="
+efo_server = "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms?obo_id="
 for r in decoded:
 
   print("Epigenome name: %s" %r['name'])
@@ -40,7 +40,7 @@ for r in decoded:
     continue
 
   request = efo_endpoint+r['efo_id']
-  efo     = ensembl_rest.ensembl_rest.get_endpoint_efo(request)
+  efo     = ensembl_rest.ensembl_rest.get_endpoint_efo(efo_server, request)
 
   # if the request is not ok, an status code (integer) will be returned
   if type(efo) is int:

@@ -65,6 +65,10 @@ request='/overlap/region/human/%s?feature=regulatory' %(result['genomic_location
 decoded = ensembl_rest.get_endpoint(server, request)
 print(json.dumps(decoded, indent=4, sort_keys=True))
 
+# 4. List Returns all tissues currently available in Homo sapiens
+request='/eqtl/tissue/homo_sapiens'
+decoded = ensembl_rest.get_endpoint(server, request)
+print (json.dumps(decoded, indent=4, sort_keys=True))
 
 # Look for the SNP in a specific specific tissue
 tissue='Whole_Blood'
@@ -72,10 +76,6 @@ request='/eqtl/variant_name/homo_sapiens/%s?statistic=p-value;tissue=%s;' %(vari
 decoded = ensembl_rest.get_endpoint(server, request)
 #print(json.dumps(decoded, indent=4, sort_keys=True))
 
-# 4. List Returns all tissues currently available in Homo sapiens
-request='/eqtl/tissue/homo_sapiens'
-decoded = ensembl_rest.get_endpoint(server, request)
-print (json.dumps(decoded, indent=4, sort_keys=True))
 
 t = Tissue(tissue, decoded)
 for k, v in t.sig_hits_sorted:

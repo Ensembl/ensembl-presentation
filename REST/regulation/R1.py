@@ -20,8 +20,8 @@ def efo_request (ext):
   Add HTTP status reason to status id
 """
 def http_status_to_string(http_status_code):
-  reason = requests.status_codes._codes[http_status]
-  string = "HTTP status code: %s. HTTP Reason: %s" %(http_status, reason) 
+  reason = requests.status_codes._codes[http_status_code]
+  string = "HTTP status code: %s. HTTP Reason: %s" %(http_status_code, reason) 
   return string 
 
 

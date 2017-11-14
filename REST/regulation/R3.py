@@ -1,6 +1,5 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 import requests, json, sys, operator, ensembl_rest, pprint
-from builtins import *
 from collections import defaultdict
 
 server = "http://rest.ensembl.org"

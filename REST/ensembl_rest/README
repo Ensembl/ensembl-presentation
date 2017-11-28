@@ -1,0 +1,14 @@
+Here lives some Python and Perl helper packages for interaction with the Ensembl REST API
+
+INSTALLATION:
+
+Python:
+
+There are 2 options here:
+1. Copy the ensembl-presentation/REST/ensembl_rest/ensembl_rest directory to a location already on your $PYTHONPATH
+2. Add the path to ensembl-presentation/REST/ensembl_rest to your PYTHONPATH:
+   export PYTHONPATH=$PYTHONPATH:/path/to/ensembl-presentation/REST/ensembl_rest
+
+Perl:
+
+Similarly to the Python package, you can add ensembl-presentation/REST/ensembl_rest/RESTHelper.pm to your $PERL5LIB

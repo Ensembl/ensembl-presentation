@@ -12,7 +12,7 @@ server = "http://rest.ensembl.org"
   Look for Variations in each of the Motif Features
 """
 
-## 1List all Epigenomes we currently have in the regulatory build for human
+## 1, List all Epigenomes we currently have in the regulatory build for human
 request = '/regulatory/species/homo_sapiens/epigenome'
 decoded = ensembl_rest.get_endpoint(server, request)
 print(json.dumps(decoded, indent=4, sort_keys=True))

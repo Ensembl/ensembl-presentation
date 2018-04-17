@@ -1,14 +1,8 @@
 from __future__ import (absolute_import, division, print_function, unicode_literals)
 import requests, json, sys, ensembl_rest
 
-server = "http://rest.ensembl.org"
 
-
-
-
-"""
-  Pretty printing of EFO  
-"""
+#  Pretty printing of EFO  
 def print_efo (efo):
   print("Link(URL): %s" %(efo['_links']['self']['href']))
   for t in efo['_embedded']['terms']:
@@ -21,13 +15,13 @@ def print_efo (efo):
   print()
 
 
-"""
-  main
-"""
+##  main
 
 # 1. List all Epigenomes available in Ensembl Regulation
+server = "http://rest.ensembl.org"
 endpoint='/regulatory/species/homo_sapiens/epigenome'
 decoded = ensembl_rest.get_endpoint(server, endpoint, 'application/json')
+print(json.dumps(decoded, indent=4, sort_keys=True))
 
 # 2. Find additional information (where available) for each epigenome using the Ontology Lookup Service 
 efo_server = "http://www.ebi.ac.uk/ols/api/ontologies/efo/terms?obo_id="

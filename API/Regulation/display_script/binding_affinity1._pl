@@ -25,7 +25,6 @@ my $motif_adaptor  = Bio::EnsEMBL::Registry->get_adaptor('Human', 'Funcgen', 'Mo
 my $motif = $motif_adaptor->fetch_by_dbID( $motif_dbID );
 
 # Calculate the relative binding affinity of this motif 
-my $slice             = $motif->feature_Slice;
 my $sequence          = $motif->seq;
 my $binding_matrix    = $motif->binding_matrix;
 my $relative_affinity = $binding_matrix->relative_affinity($sequence);

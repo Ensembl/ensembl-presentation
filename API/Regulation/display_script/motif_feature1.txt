@@ -1,0 +1,18 @@
+Found 13 transcription factor motifs in ENSR00000000667
+Relative affinity of motif with ID 1245678 from matrix MA0139.1  with sequence AGGCCAGCAAGTGGCAGGG : 0.866006998559655
+Relative affinity of motif with ID 1262101 from matrix MA0139.1  with sequence CACCCAGAGGAGGGCAGCG : 0.865127209303853
+Relative affinity of motif with ID 1283061 from matrix MA0139.1  with sequence TCGCCACTAGGTGGCAGGC : 0.936788245295537
+Relative affinity of motif with ID 860382 from matrix MA0162.2  with sequence TGTCCGCCCACGCG : 0.957171381892502
+Relative affinity of motif with ID 1098435 from matrix PB0010.1  with sequence TCCGCCCACGCGGT : 0.94156872189562
+Relative affinity of motif with ID 1240940 from matrix MA0139.1  with sequence GAGACCCCAGAGGGCAGCA : 0.861573139645456
+Relative affinity of motif with ID 1097919 from matrix MA0366.1  with sequence AGGGG : 1
+Relative affinity of motif with ID 1017727 from matrix MA0341.1  with sequence AGGGG : 1
+Relative affinity of motif with ID 926335 from matrix PB0010.1  with sequence CCCGCCCCCGCCGC : 0.925702041405788
+Relative affinity of motif with ID 1075901 from matrix MA0162.2  with sequence CGCCCGCCCCCGCC : 0.986635629496039
+Relative affinity of motif with ID 1005913 from matrix MA0337.1  with sequence CCCCCGC : 1
+Relative affinity of motif with ID 759795 from matrix PB0010.1  with sequence CCCGCCCCCACCCC : 0.880994102873579
+Relative affinity of motif with ID 1159410 from matrix MA0162.2  with sequence GGCCCGCCCCCACC : 0.973045700299644
+
+real	1m19.542s
+user	0m0.584s
+sys	0m0.208s

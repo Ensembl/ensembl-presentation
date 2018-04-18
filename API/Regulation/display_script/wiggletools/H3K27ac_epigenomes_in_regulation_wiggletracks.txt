@@ -1,0 +1,214 @@
+Spleen has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Spleen_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+CM CD4+ ab T cell (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/CM_CD4_ab_T_cell_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Small Intestine has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Small_Intestine_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Aorta has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Aorta_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+EPC (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/EPC_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+M2 macrophage (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/M2_macrophage_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Pancreas has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Pancreas_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+erythroblast (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/erythroblast_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+neutrophil (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/neutrophil_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+M0 macrophage (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/M0_macrophage_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Psoas Muscle has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Psoas_Muscle_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Thymus has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Thymus_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+neutrophil myelocyte (BM) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/neutro_myelocyte_BM_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Gastric has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Gastric_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+eosinophil (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/eosinophil_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+CD14+CD16- monocyte (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/CD14CD16__monocyte_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+CD4+ ab T cell (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/CD4_ab_T_cell_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+naive B cell (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/naive_B_cell_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+neutrophil (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/neutrophil_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+M0 macrophage (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/M0_macrophage_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+HUVEC prol (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HUVEC_prol_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+CD14+CD16- monocyte (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/CD14CD16__monocyte_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Right Atrium has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Right_Atrium_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+MSC (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/MSC_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+M1 macrophage (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/M1_macrophage_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+M2 macrophage (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/M2_macrophage_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+iPS DF 6.9 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/iPS_DF_6_9_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+CD8+ ab T cell (CB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/CD8_ab_T_cell_CB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+M1 macrophage (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/M1_macrophage_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Ovary has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Ovary_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Lung has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Lung_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+EM CD8+ ab T cell (VB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/EM_CD8_ab_T_cell_VB_H3K27ac_ChIP-Seq_BLUEPRINT85_bwa_samse.bw
+
+Fetal Muscle Trunk has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Muscle_Trunk_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+HSMM has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HSMM_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+Monocytes-CD14+ (PB) Roadmap has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Monocytes_CD14_PB_Roadmap_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+HUVEC has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HUVEC_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+B cells (PB) Roadmap has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/B_cells_PB_Roadmap_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Placenta has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Placenta_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+NHDF-AD has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/NHDF_AD_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+Natural Killer cells (PB) has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Natural_Killer_cells_PB_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+HepG2 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HepG2_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+HMEC has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HMEC_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+Fetal Thymus has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Thymus_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Fetal Stomach has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Stomach_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Fetal Muscle Leg has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Muscle_Leg_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+IMR90 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/IMR90_H3K27ac_ChIP-Seq_RoadmapEpigenomics85_bwa_samse.bw
+
+Fetal Adrenal Gland has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Adrenal_Gland_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Fetal Intestine Small has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Intestine_Small_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+K562 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/K562_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+Fetal Intestine Large has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Fetal_Intestine_Large_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+H1ESC has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/H1ESC_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+NHEK has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/NHEK_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+NHLF has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/NHLF_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+HSMMtube has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HSMMtube_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+T cells (PB) Roadmap has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/T_cells_PB_Roadmap_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+H1ESC has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/H1ESC_H3K27ac_ChIP-Seq_RoadmapEpigenomics85_bwa_samse.bw
+
+GM12878 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/GM12878_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+NH-A has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/NH_A_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+Left Ventricle has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Left_Ventricle_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+Osteobl has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Osteobl_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+Monocytes-CD14+ has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/Monocytes_CD14_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+iPS-20b has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/iPS_20b_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+HeLa-S3 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/HeLa_S3_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+DND-41 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/DND_41_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+iPS DF 19.11 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/iPS_DF_19_11_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+H1-neuronal progenitor has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/H1_neuronal_progenitor_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+H1-trophoblast has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/H1_trophoblast_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+A549 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/A549_H3K27ac_ChIP-Seq_ENCODE85_bwa_samse.bw
+
+H9 has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/H9_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+H1-mesenchymal has a ChIP-seq assay for H3K27ac the wiggletrack is in
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/result_set/085/ersa_signal/bigwig/H1_mesenchymal_H3K27ac_ChIP-Seq_Roadmap85_bwa_samse.bw
+
+
+real	7m42.664s
+user	0m2.220s
+sys	0m0.592s

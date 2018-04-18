@@ -1,0 +1,6 @@
+Regulatory Feature ID:  ENSR00000000667
+Regulatory Feature Type:   Promoter Flanking Region
+
+real	1m17.083s
+user	0m0.528s
+sys	0m0.196s

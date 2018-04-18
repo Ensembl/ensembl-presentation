@@ -1,0 +1,5 @@
+Extracting CRISPR sites around gene SERTM1
+
+real	1m15.203s
+user	0m0.780s
+sys	0m0.212s

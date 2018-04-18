@@ -1,0 +1,482 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="eng">
+<!-- InstanceBegin template="/Templates/new_template_leftmenu.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+ <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> --> <!-- Not yet implemented -->
+
+  <title>Ensembl Regulation API workshop - February 2017, Taiwan</title>
+  <meta name="description" content="EMBL-EBI"><!-- Describe what this page is about -->
+  <meta name="keywords" content="bioinformatics, europe, institute, ensembl"><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
+  <meta name="author" content="Michael Nuhn"><!-- Your [project-name] here -->
+
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <!-- CSS: implied media=all -->
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/boilerplate-style.css">
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/ebi-global.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/ebi-visual.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/984-24-col-fluid.css" type="text/css" media="screen">
+
+  <!-- you can replace this with [projectname]-colours.css. See http://www.ebi.ac.uk/web/style/colour for details of how to do this -->
+  <!-- also inform ES so we can host your colour palette file -->
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/develop/embl-petrol-colours.css" type="text/css" media="screen">
+
+  <!-- for production the above can be replaced with -->
+  <!--
+  <link rel="stylesheet" href="//www.ebi.ac.uk/web_guidelines/css/compliance/mini/ebi-fluid-embl.css">
+  -->
+
+  <style type="text/css">
+    /* You have the option of setting a maximum width for your page, and making sure everything is centered */
+    /* body { max-width: 1600px; margin: 0 auto; } */
+    .section_header {border:1px solid #1d8086;background-color:#1d8086;color:#FFF;padding:2px 5px;font-weight:bold;font-size:1.1em;border-top-left-radius:6px;border-top-right-radius:6px}
+    .section_content {border:1px solid #1d8086;padding:0px 4px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:20px}
+    .exercise {float:left;min-width:125px;border:1px solid #1d8086;background-color:#70bdbd;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px;text-align:right}
+    .empty_exercise {float:left;min-width:125px;border:1px solid #FFFFFF;background-color:#FFFFFF;color:#FFF;padding:5px 5px;font-weight:bold;margin-left:2px;margin-right:0px}
+    .file_list {float:left;border:1px solid #1d8086;padding:5px 4px;margin-left:5px}
+    .exercise_output {border-bottom:1px solid #a9d7d7;background-color:#a9d7d7;padding:2px 8px;margin-top:4px;margin-bottom:4px}
+    .exercise_html {border:1px solid #e4f8f9;background-color:#e4f8f9;padding:2px 8px;margin-top:4px;margin-bottom:4px}
+    .exercise_type {float:left;padding:4px 6px;font-size:1.1em;}
+    .exercise_type::before {content: "\2192 ";margin-right:6px;color:#1d8086}
+    .separator {margin-left:5px;margin-right:5px}
+  </style>
+  <!-- end CSS-->
+
+
+  <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+       Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+       For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+
+  <!-- Full build -->
+  <!-- <script src="//www.ebi.ac.uk/web_guidelines/js/libs/modernizr.minified.2.1.6.js"></script> -->
+
+  <!-- custom build (lacks most of the "advanced" HTML5 support -->
+  <script src="//www.ebi.ac.uk/web_guidelines/js/libs/modernizr.custom.49274.js"></script>
+
+</head>
+
+<body class="level2"><!-- add any of your classes or IDs -->
+  <div id="skip-to">
+    <ul>
+      <li><a href="#content">Skip to main content</a></li>
+      <li><a href="#local-nav">Skip to local navigation</a></li>
+      <li><a href="#global-nav">Skip to EBI global navigation menu</a></li>
+      <li><a href="#global-nav-expanded">Skip to expanded EBI global navigation menu (includes all sub-sections)</a></li>
+    </ul>
+  </div>
+
+  <div id="wrapper" class="container_24">
+    <header>
+      <div id="global-masthead" class="masthead grid_24">
+        <!--This has to be one line and no newline characters-->
+        <a href="//www.ebi.ac.uk/" title="Go to the EMBL-EBI homepage"><img src="//www.ebi.ac.uk/web_guidelines/images/logos/EMBL-EBI/EMBL_EBI_Logo_white.png" alt="EMBL European Bioinformatics Institute"></a>
+
+        <nav>
+          <ul id="global-nav">
+            <!-- set active class as appropriate -->
+            <li class="first active" id="services"><a href="//www.ebi.ac.uk/services">Services</a></li>
+            <li id="research"><a href="//www.ebi.ac.uk/research">Research</a></li>
+            <li id="training"><a href="//www.ebi.ac.uk/training">Training</a></li>
+            <li id="industry"><a href="//www.ebi.ac.uk/industry">Industry</a></li>
+            <li id="about" class="last"><a href="//www.ebi.ac.uk/about">About us</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div id="local-masthead" class="masthead grid_24 nomenu">
+
+        <!-- local-title -->
+        <div class="grid_24 alpha" id="local-title" style="padding:10px 5px;vertical-align:middle">
+          <img alt="EnsEMBL logo" src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/thumbnail/public/resource/logo/ebang-400dpi.png" style="width:60px;height:57px;margin:0px 10px;vertical-align:middle" />
+          <h1 style="display:inline;vertical-align:middle">Ensembl Regulation API workshop <span style="color:#FFF;font-size:20pt">|</span><span style="color:#FFF;font-size:20pt">Taiwan</span></h1>
+        </div>
+        <!-- /local-title -->
+
+        <!-- /local-nav -->
+
+      </div>
+    </header>
+
+    <div id="content" role="main" class="grid_24 clearfix">
+
+      <!-- start left menu here -->
+      <section class="grid_5 alpha">
+        <div class="leftmenu" id="leftmenu" style="visibility: visible; display: block;margin-left:4px">
+          <!-- The following 2 divs add an Icon Box to your Menu -->
+          <div style="background-color:#70bdbd;padding-left:5px;font-size:1.2em;color:#FFF;font-weight:bold;border-top-left-radius:6px;border-top-right-radius:6px;margin:0px 2px">Useful links</div>
+          <div style="border:1px solid #70bdbd;margin:0px 2px 10px;padding-top:5px;border-bottom-left-radius:6px;border-bottom-right-radius:6px">                                         
+            <ul>
+              <li><a href="http://www.ensembl.org" target="_blank">Ensembl website</a></li>
+              <li><a href="https://www.youtube.com/user/EnsemblHelpdesk" target="_blank">Outreach youtube channel</a></li>
+              <li><a href="https://youtu.be/8yJHSLdC7BQ?t=5m7s" target="_blank">Webinar: Ensembl Regulation</a></li>
+              <li><a href="https://www.youtube.com/watch?v=LPElKJ4ioPI" target="_blank">Webinar: Genomic features that regulate genes – the Ensembl Regulatory Build</a></li>
+            </ul>
+             <h4>Slides</h4>
+            <ul>
+              <li><a href="https://docs.google.com/presentation/d/1PFXSIepo5j1J0Cgns0am6wKRL1JtAOH_xTobzBPtYtI/edit?usp=sharing">Regulatory features and Motifs</a></li>
+              <li><a href="slides/GenomeStatisticsWithRegulatoryFeatures.pptx">Statistics with Regulatory Features</a></li>
+              <li><a href="slides/Crispr.pptx">Crispr</a></li>
+              <li><a href="slides/Microarrays.pptx">Microarrays</a></li>
+            </ul>
+            <h4>Data</h4>
+            <ul>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/index.html" target="_blank">Ensembl Regulation overview</a></li>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/regulation_sources.html" target="_blank">Data sources</a></li>
+            </ul>
+            
+            <h4>Perl API</h4>
+            <ul>  
+              <li><a href="http://www.ensembl.org/info/docs/api/funcgen/regulation_tutorial.html" target="_blank">Perl API Tutorial</a></li>
+              <li><a href="http://www.ensembl.org/info/docs/Doxygen/funcgen-api/index.html" target="_blank">Perl API Reference</a></li>
+            </ul>
+
+            <h4>Database</h4>
+            <ul>
+              <li><a href="http://www.ensembl.org/info/docs/api/funcgen/trimmed_funcgen_schema.png" target="_blank">Database schema [PNG]</a></li>
+              <li><a href="http://www.ensembl.org/info/docs/api/funcgen/funcgen_schema.html" target="_blank">Database tables</a></li>
+            </ul>
+
+            <h4>Ensembl Regulatory Build</h4>
+            <ul>  
+              <li><a href="http://genomebiology.com/2015/16/1/56" target="_blank">Paper</a></li>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/regulatory_build.html" target="_blank">General documentation</a></li>
+              <li><a href="http://www.ensembl.org/info/genome/funcgen/regulatory_segmentation.html" target="_blank">Genome segmentation</a></li>
+            </ul>
+
+            <h4>REST API</h4>
+            <ul>
+              <li><a href="http://rest.ensembl.org/" target="_blank">REST API</a></li>
+            </ul>
+            <h4>Exercises</h4>
+            <ul>
+              <li><a href="index.html">Exercises</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid_19">
+        <!--  <nav id="breadcrumb">
+          <p>
+            <a href="../../">Home</a> &gt; <a href="../">Workshops</a> &gt; Taiwan, February 2017
+          </p>
+        </nav>
+        -->
+        <div style="font-size:1.1em;font-weight:bold;margin-bottom:10px">
+          The slides and exercises presented here are based on Ensembl <span style="color:#1d8086;font-weight:bold">87</span>
+        </div>
+
+        
+        
+        
+        
+    <!-- Regulatory Feature Exercise-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Regulatory Features:</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/regulatory_features/epigenomes_in_regulatory_build.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/regulatory_features/epigenomes_in_regulatory_build._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/regulatory_features/epigenomes_in_regulatory_build.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+    
+<!--
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Regulatory Feature :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="regulatory_feature1_output.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/regulatory_feature1._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp&nbsp</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/regulatory_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Regulatory Features:</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/regulatory_features/fetch_regulatory_feature.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/regulatory_features/fetch_regulatory_feature._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/regulatory_features/fetch_regulatory_feature.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Regulatory Features:</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/regulatory_features/regulatory_activity.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/regulatory_features/regulatory_activity._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/regulatory_features/regulatory_activity.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 3</div>
+      <div style="clear:both"></div>
+    </div>
+
+
+
+
+
+
+    <!-- Motif Feature Exercise-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Motif Features:</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/motif_feature1.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/motif_feature1._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/motif_feature1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Binding affinity Exercises-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Binding affinity :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/binding_affinity1.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/binding_affinity1._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/binding_affinity1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+
+
+
+
+
+    <!-- WiggleTools Exercises-->
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/H3K27ac_epigenomes_in_regulation.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/H3K27ac_epigenomes_in_regulation._pl" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/H3K27ac_epigenomes_in_regulation.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/H3K27ac_epigenomes_in_regulation_wiggletracks.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/H3K27ac_epigenomes_in_regulation_wiggletracks._pl" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/H3K27ac_epigenomes_in_regulation_wiggletracks.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/mean_signal.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/mean_signal.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/mean_signal.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 3</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/regulatory_features_from_chromosome_22.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/regulatory_features_from_chromosome_22.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/regulatory_features_from_chromosome_22.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 4</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/mean_lung_by_regulatory_feature.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/mean_lung_by_regulatory_feature.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/mean_lung_by_regulatory_feature.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 5</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 6</div>
+      <div style="clear:both"></div>
+    </div>
+    
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Wiggletools :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/wiggletools/absolute_difference_lung_by_regulatory_feature_one_wiggletools_command.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/wiggletools/absolute_difference_lung_by_regulatory_feature_one_wiggletools_command.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/wiggletools/absolute_difference_lung_by_regulatory_feature_one_wiggletools_command.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 6 alternative</div>
+      <div style="clear:both"></div>
+    </div>
+
+
+
+
+
+
+
+    <!-- CRISPR Exercises-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">CRISPR :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/crispr/location_of_crispr_files.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/crispr/location_of_crispr_files._pl" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/crispr/location_of_crispr_files.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">CRISPR :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/find_crispr_sites.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/find_crispr_sites.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/find_crispr_sites.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">CRISPR :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/find_crispr_sites_around_gene.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/find_crispr_sites_around_gene._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/find_crispr_sites_around_gene.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 3</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">CRISPR :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/find_closest_crispr_sites.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/find_closest_crispr_sites.bash" target="_blank">Script <small>[.BASH]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/find_closest_crispr_sites.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 4</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <!-- Microarray Exercises-->
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="exercise">Microarrays :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/microarrays1.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/microarrays1._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/microarrays1.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 1</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Microarray :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/microarrays2.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/microarrays2._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/microarrays2.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 2</div>
+      <div style="clear:both"></div>
+    </div>
+
+    <div style="margin-top:25px;margin-bottom:20px">
+      <div class="empty_exercise">Microarray :</div>
+      <div class="file_list">
+        <a class="exercise_output" href="display_script/microarrays3.txt" target="_blank">Output <small>[.TXT]</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_output" href="display_script/microarrays3._pl" target="_blank">&nbsp;&nbsp;&nbsp;Script <small>[.PL]&nbsp;&nbsp;</small></a>
+        <span class="separator">-</span>
+        <a class="exercise_html" href="display_script/microarrays3.shtml" target="_blank">Script display <small>[.HTML]</small></a>
+      </div>
+      <div class="exercise_type">Exercise 3</div>
+      <div style="clear:both"></div>
+    </div>
+
+</section>
+
+
+
+
+
+    <!-- Footer -->
+    <div class="footerdiv" id="footerdiv" style="z-index:2;">
+      <iframe src="/inc/foot.html" name="foot" frameborder="0" marginwidth="0px" marginheight="0px" scrolling="no" height="22px" width="100%" style="z-index:2;">
+        Your browser does not support inline frames or is currently configured not to display inline frames. Content can be viewed at actual source page: http://www.ebi.ac.uk/inc/foot.html
+      </iframe>
+    </div>
+    <script src="http://www.ebi.ac.uk/inc/js/footer.js" type="text/javascript"></script>
+  </div>
+</body>
+</HTML>

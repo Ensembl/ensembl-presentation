@@ -1,0 +1,27 @@
+
+echo display_script/wiggletools/mean_signal.bash
+(time perl display_script/wiggletools/mean_signal.bash) &> display_script/wiggletools/mean_signal.txt
+
+echo display_script/wiggletools/mean_signal_by_regulatory_feature.bash
+(time perl display_script/wiggletools/mean_signal_by_regulatory_feature.bash) &> display_script/wiggletools/mean_signal_by_regulatory_feature.txt
+
+echo display_script/wiggletools/regulatory_features_from_chromosome_22.bash
+(time perl display_script/wiggletools/regulatory_features_from_chromosome_22.bash) &> display_script/wiggletools/regulatory_features_from_chromosome_22.txt
+
+echo display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.bash
+(time perl display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.bash) &> display_script/wiggletools/absolute_difference_lung_by_regulatory_feature.txt
+
+echo display_script/wiggletools/mean_lung_by_regulatory_feature.bash
+(time perl display_script/wiggletools/mean_lung_by_regulatory_feature.bash) &> display_script/wiggletools/mean_lung_by_regulatory_feature.txt
+
+echo display_script/find_crispr_sites.bash
+(time perl display_script/find_crispr_sites.bash) &> display_script/find_crispr_sites.txt
+
+echo display_script/find_closest_crispr_sites.bash
+(time perl display_script/find_closest_crispr_sites.bash) &> display_script/find_closest_crispr_sites.txt
+
+
+echo display_script/wiggletools/absolute_difference_lung_by_regulatory_feature_one_wiggletools_command.bash
+(time perl display_script/wiggletools/absolute_difference_lung_by_regulatory_feature_one_wiggletools_command.bash) &> display_script/wiggletools/absolute_difference_lung_by_regulatory_feature_one_wiggletools_command.txt
+
+echo All done.

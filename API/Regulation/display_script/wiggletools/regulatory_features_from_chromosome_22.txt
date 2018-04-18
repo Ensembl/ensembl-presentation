@@ -1,0 +1,5 @@
+Features on chromosome 22 have been written to /home/ensembl/data/RegulatoryBuild/RegBuild.chromosome22.bed.
+
+real	0m0.295s
+user	0m0.052s
+sys	0m0.056s

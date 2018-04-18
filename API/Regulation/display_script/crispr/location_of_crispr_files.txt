@@ -1,0 +1,8 @@
+For homo_sapiens the file can be downloaded here:
+ftp://ftp.ensembl.org/pub/data_files/homo_sapiens/GRCh38/external_feature_file/085/wge_crispr_sites/wge_crisprs_grch38.bb
+For mus_musculus the file can be downloaded here:
+ftp://ftp.ensembl.org/pub/data_files/mus_musculus/GRCm38/external_feature_file/085/wge_crispr_sites/wge_crisprs_mouse.bb
+
+real	1m14.890s
+user	0m0.448s
+sys	0m0.108s

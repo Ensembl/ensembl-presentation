@@ -1,0 +1,5 @@
+The result is in /home/ensembl/data/BigWig/mean_signal.bw
+
+real	1m28.201s
+user	1m41.076s
+sys	0m11.168s

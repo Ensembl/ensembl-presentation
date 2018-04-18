@@ -1,0 +1,18 @@
+<html>
+<head>
+  <link href="../prism.css" rel="stylesheet" />
+  <title>Mean signal - Ensembl Regulation API workshop - February 2017, Taiwan</title>
+</head>
+<body>
+<script src="../prism.js"></script>
+
+<h2>Mean signal</h2>
+
+<pre>
+<code class="language-bash">
+<!--#include file="mean_signal.bash" -->
+</code>
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use Bio::EnsEMBL::Registry;
+
+Bio::EnsEMBL::Registry->load_registry_from_db(
+  -host => 'asiadb.ensembl.org', 
+  -species => 'homo_sapiens',
+  -user => 'anonymous'
+);
+
+my $regulatory_build_adaptor = Bio::EnsEMBL::Registry->get_adaptor('homo_sapiens', 'funcgen', 'RegulatoryBuild');
+my $regulatory_build = $regulatory_build_adaptor->fetch_current_regulatory_build;
+my $epigenomes_in_regulatory_build = $regulatory_build->get_all_Epigenomes;
+
+print "There are " . @$epigenomes_in_regulatory_build . " epigenomes in the regulatory build:\n";
+print join "\n", map { '  - ' . $_->display_label } @$epigenomes_in_regulatory_build;
+print  "\n";
+

@@ -1,0 +1,24 @@
+<html>
+<head>
+  <link href="prism.css" rel="stylesheet" />
+  <script src="samaxesjs.toc-1.3.1.js"></script>
+  <script>
+        samaxesJS.toc();
+  </script>
+
+  <meta charset="utf-8">
+  <title>Microarrays exercise 1 - Ensembl Regulation API workshop - February 2017, Taiwan</title>
+</head>
+<body>
+<script src="prism.js"></script>
+
+<h2>Microarrays exercise 3</h2>
+
+<pre>
+<code class="language-perl">
+<!--#include file="microarrays3._pl" -->
+</code>
+</pre>
+
+</body>
+</html>

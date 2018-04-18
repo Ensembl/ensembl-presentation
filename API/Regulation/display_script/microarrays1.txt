@@ -1,0 +1,174 @@
+Array:  HumanWG_6_V2
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanWG_6_V2 DesignID: HumanWG_6_V2
+
+Array:  HumanWG_6_V3
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanWG_6_V3 DesignID: HumanWG_6_V3
+
+Array:  HuEx-1_0-st-v2
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HuEx-1_0-st-v2 DesignID: HuEx-1_0-st-v2
+
+Array:  HC-G110
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HC-G110 DesignID: HC-G110
+
+Array:  HG-Focus
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-Focus DesignID: HG-Focus
+
+Array:  HG-U133A_2
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U133A_2 DesignID: HG-U133A_2
+
+Array:  HG-U133A
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U133A DesignID: HG-U133A
+
+Array:  HG-U133B
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U133B DesignID: HG-U133B
+
+Array:  HG-U133_Plus_2
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U133_Plus_2 DesignID: HG-U133_Plus_2
+
+Array:  HG-U95Av2
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U95Av2 DesignID: HG_U95Av2
+
+Array:  HG-U95B
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U95B DesignID: HG-U95B
+
+Array:  HG-U95C
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U95C DesignID: HG-U95C
+
+Array:  HG-U95D
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U95D DesignID: HG-U95D
+
+Array:  HG-U95E
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U95E DesignID: HG-U95E
+
+Array:  HG-U95A
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HG-U95A DesignID: HG_U95A
+
+Array:  HuGeneFL
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HuGeneFL DesignID: HuGeneFL
+
+Array:  U133_X3P
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: U133_X3P DesignID: U133_X3P
+
+Array:  HuGene-1_0-st-v1
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HuGene-1_0-st-v1 DesignID: HuGene-1_0-st-v1
+
+Array:  CODELINK
+Type:   OLIGO
+Vendor: CODELINK
+ArrayChip: CODELINK DesignID: CODELINK
+
+Array:  OneArray
+Type:   OLIGO
+Vendor: PHALANX
+ArrayChip: OneArray DesignID: OneArray
+
+Array:  CGH_44b
+Type:   OLIGO
+Vendor: AGILENT
+ArrayChip: CGH_44b DesignID: CGH_44b
+
+Array:  HumanWG_6_V1
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanWG_6_V1 DesignID: HumanWG_6_V1
+
+Array:  HumanMethylation450
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanMethylation450 DesignID: HumanMethylation450
+
+Array:  HumanMethylation27
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanMethylation27 DesignID: HumanMethylation27
+
+Array:  SurePrint_G3_GE_8x60k
+Type:   OLIGO
+Vendor: AGILENT
+ArrayChip: SurePrint_G3_GE_8x60k DesignID: SurePrint_G3_GE_8x60k
+
+Array:  WholeGenome_4x44k_v1
+Type:   OLIGO
+Vendor: AGILENT
+ArrayChip: WholeGenome_4x44k_v1 DesignID: WholeGenome_4x44k_v1
+
+Array:  WholeGenome_4x44k_v2
+Type:   OLIGO
+Vendor: AGILENT
+ArrayChip: WholeGenome_4x44k_v2 DesignID: WholeGenome_4x44k_v2
+
+Array:  PrimeView
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: PrimeView DesignID: PrimeView
+
+Array:  SurePrint_G3_GE_8x60k_v2
+Type:   OLIGO
+Vendor: AGILENT
+ArrayChip: SurePrint_G3_GE_8x60k_v2 DesignID: SurePrint_G3_GE_8x60k_v2
+
+Array:  HuGene-2_0-st-v1
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HuGene-2_0-st-v1 DesignID: HuGene-2_0-st-v1
+
+Array:  HumanHT-12_V3
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanHT-12_V3 DesignID: HumanHT-12_V3
+
+Array:  HumanHT-12_V4
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanHT-12_V4 DesignID: HumanHT-12_V4
+
+Array:  HumanRef-8_V3
+Type:   OLIGO
+Vendor: ILLUMINA
+ArrayChip: HumanRef-8_V3 DesignID: HumanRef-8_V3
+
+Array:  HTA-2_0
+Type:   OLIGO
+Vendor: AFFY
+ArrayChip: HTA-2_0 DesignID: HTA-2_0
+
+
+real	1m15.844s
+user	0m0.416s
+sys	0m0.116s

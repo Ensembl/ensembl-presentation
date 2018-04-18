@@ -9,7 +9,7 @@
        More info: h5bp.com/b/378 -->
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> --> <!-- Not yet implemented -->
 
-  <title>Ensembl Regulation API workshop - February 2017, Taiwan</title>
+  <title>Ensembl Regulation API workshop - April 2018, Hinxton</title>
   <meta name="description" content="EMBL-EBI"><!-- Describe what this page is about -->
   <meta name="keywords" content="bioinformatics, europe, institute, ensembl"><!-- A few keywords that relate to the content of THIS PAGE (not the whol project) -->
   <meta name="author" content="Michael Nuhn"><!-- Your [project-name] here -->
@@ -98,7 +98,7 @@
         <!-- local-title -->
         <div class="grid_24 alpha" id="local-title" style="padding:10px 5px;vertical-align:middle">
           <img alt="EnsEMBL logo" src="http://www.ebi.ac.uk/sites/ebi.ac.uk/files/styles/thumbnail/public/resource/logo/ebang-400dpi.png" style="width:60px;height:57px;margin:0px 10px;vertical-align:middle" />
-          <h1 style="display:inline;vertical-align:middle">Ensembl Regulation API workshop <span style="color:#FFF;font-size:20pt">|</span><span style="color:#FFF;font-size:20pt">Taiwan</span></h1>
+          <h1 style="display:inline;vertical-align:middle">Ensembl Regulation API workshop <span style="color:#FFF;font-size:20pt">|</span><span style="color:#FFF;font-size:20pt">Hinxton</span></h1>
         </div>
         <!-- /local-title -->
 
@@ -123,10 +123,16 @@
             </ul>
             <h4>Slides</h4>
             <ul>
-              <li><a href="https://docs.google.com/presentation/d/1PFXSIepo5j1J0Cgns0am6wKRL1JtAOH_xTobzBPtYtI/edit?usp=sharing">Regulatory features and Motifs</a></li>
+            
+              <li><a href="https://docs.google.com/presentation/d/1hIiVgKjW2btDydWDkYdd7UtRVo3ufXRp8U3uTYBjTGU/edit?usp=sharing">Ensembl Funcgen</a></li>
+              <li><a href="https://docs.google.com/presentation/d/171APepTu3N0QVMx57WEYeqytCjWFAdTtSONKnwtVFk0/edit?usp=sharing">Epigenomics and Gene Regulation Data</a></li>
+              <!--
               <li><a href="slides/GenomeStatisticsWithRegulatoryFeatures.pptx">Statistics with Regulatory Features</a></li>
               <li><a href="slides/Crispr.pptx">Crispr</a></li>
-              <li><a href="slides/Microarrays.pptx">Microarrays</a></li>
+              -->
+              <li><a href="https://docs.google.com/presentation/d/1snSIzahemZVBtpVvwokF77T0oUjXZhBYZYhP0hpO6tQ/edit?usp=sharing">Microarrays</a></li>
+              <li><a href="https://docs.google.com/presentation/d/1v0GAVXxv5ITKchlgQFNX8wUM3GVeGZLUanFYR0vR3FE/edit?usp=sharing">eQTLs</a></li>
+              
             </ul>
             <h4>Data</h4>
             <ul>
@@ -168,12 +174,12 @@
       <section class="grid_19">
         <!--  <nav id="breadcrumb">
           <p>
-            <a href="../../">Home</a> &gt; <a href="../">Workshops</a> &gt; Taiwan, February 2017
+            <a href="../../">Home</a> &gt; <a href="../">Workshops</a> &gt; Taiwan, April 2018
           </p>
         </nav>
         -->
         <div style="font-size:1.1em;font-weight:bold;margin-bottom:10px">
-          The slides and exercises presented here are based on Ensembl <span style="color:#1d8086;font-weight:bold">87</span>
+          The slides and exercises presented here are based on Ensembl <span style="color:#1d8086;font-weight:bold">92</span>
         </div>
 
 
@@ -246,205 +252,6 @@ For every epigenome in the current regulatory build, print the activity that it 
       </div>
     </div>
 
-
-
-
-    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
-      <div class="exercise">Statistics with Regulatory Features</div>
-      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
-<p>
-There has been a bug fix for wiggletools. Please update wiggletools on your virtual machine by running the following commands:
-</p>
-
-<pre>
-wget https://github.com/Ensembl/WiggleTools/releases/download/v1.2.1/wiggletools
-rm /home/ensembl/software/wiggletools/wiggletools
-mv wiggletools /home/ensembl/software/wiggletools/wiggletools
-chmod u+x /home/ensembl/software/wiggletools/wiggletools
-</pre>
-<p>
-Thanks!
-</p>      <p>
-      You are interested in the epigenome of Lung and want to find out, which regulatory regions from Lung differ most in their activity from the epigenomes of a baseline of other cell types. 
-      </p>
-      <p>
-      The histone H3K27ac is thought to be a mark of active regulatory elements and may distinguish active enhancers and promoters from their inactive counterparts.
-      </p>
-      <p>
-      You decide to look at the binding sites of the histone H3K27ac to regulatory regions in Lung and compare them to a baseline of epigenomes that were assayed for H3K27ac.
-      </p>
-      <p>
-      <ol>
-        <li>
-          Find all epigenomes in Ensembl for which ChIP-seq data from an H3K27ac assay has been aligned to human and a bigWig file with the enrichment is provided.
-          <br />
-          Hint:
-          <ul>
-            <li>
-              Histones and transcriptions factors are feature types (FeatureType object).
-            </li>
-            <li>
-              Alignments are stored with a ResultSet object.
-            </li>
-            <li>
-              Consider the dbfile_path method from the ResultSet object. If it is empty, then no bigWig file is provided.
-            </li>
-          </ul>
-        <li>
-        You decide to use the following epigenomes for your baseline: 
-          <ul>
-            <li>
-              Aorta,
-            </li>
-            <li>
-              Fetal_Muscle_Leg,
-            </li>
-            <li>
-              K562 and
-            </li>
-            <li>
-              Monocytes_CD14_PB_Roadmap.
-            </li>
-          </ul>
-          Find their signal files for H3K27ac and for Lung in bigWig format on the ftp site.
-          
-          <br />
-          
-          Hint:
-
-          <ul>
-            <li>
-              The base directory for external files is: ftp://ftp.ensembl.org/pub/current_data_files. The subdirectories after that are the species name and assembly. Then the dbfile_path string returned from the ResultSet object.
-            </li>
-          </ul>
-          
-        </li>
-        
-        <li>
-          <p>
-          The bigWig files are large. They have been downloaded to your virtual machine so you don’t have to wait for the download. 
-          </p>
-          <p>
-          You can find them here on your virtual machine: /home/ensembl/data/BigWig
-          </p>
-          <p>
-          Use these in the following exercises.
-          </p>
-            Create a bigWig file that has the mean H3K27ac signal for 
-            <ul>
-              <li>
-                Aorta,
-              </li>
-              <li>
-                Fetal_Muscle_Leg,
-              </li>
-              <li>
-                K562 and 
-              </li>
-              <li>
-                Monocytes CD14 PB Roadmap.
-              </li>
-            </ul>
-          Hint:
-
-          <ul>
-            <li>
-              The <a href=" https://github.com/Ensembl/WiggleTools ">wiggletools repository</a> has a tutorial explaining its commands.
-            </li>
-          </ul>
-            
-
-        </li>
-        <li>A bed file with the current regulatory build has been copied to your virtual machine:
-          <p>
-/home/ensembl/data/RegulatoryBuild/RegBuild.bed
-          </p>
-          <p>
-Create a bed file with all Regulatory Features from chromosome 22.
-          </p>
-        </li>
-        <li>
-          <p>
-Find the 10 Regulatory Features that have the highest mean signal in Lung.
-          </p>
-          <p>
-Hint: 
-            <ul>
-              <li>
-If you use the smaller file with Regulatory Features from chromosome 22 only, your testruns will complete more quickly.
-              </li>
-              <li>
-The apply_paste function from wiggletools may be helpful.
-              <li>
-Bash has a sort function that can sort by specific columns.
-              </li>
-            </ul>
-          </p>
-
-        </li>
-        <li>Find the 10 Regulatory Features in which the H3K27ac signal from Lung is the most different from the average signal of the other cell types.
-        </li>
-      </ol>
-      </div>
-    </div>
-
-
-
-
-
-
-
-    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
-      <div class="exercise">CRISPR:</div>
-      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
-      <ol>
-        <li>
-          Find the files with the CRISPR sites for human and mouse on the Ensembl ftp site using the api.
-          <br />
-          Hint: You can use the CrisprSitesFile object.
-        </li>
-
-        <li>
-          <p>
-            The CRISPR file is large, so it has been downloaded for you to the virtual machine. It is here: /home/ensembl/data/Crispr/wge_crisprs_grch38.bb
-          </p>
-          <p>
-            Find the canonical CRISPR sites on chromosome 13 from base 32.315.474 to 32.400.266 and store them in a BED file.
-          </p>
-          <p>
-            Hint: 
-            <ul>
-              <li>
-                You can use the program bigBedToBed that is installed on the virtual machine.
-              </li>
-              <li>
-                BigBed files use UCSC names for chromosomes, so the name in the file is not 13 as in Ensembl, but chr13.
-              </li>
-            </ul>
-          </p>
-        </li>
-
-        <li>
-          Find the canonical CRISPR sites for the gene SERTM1 within a genomic region 500bp upstream of the transcription start site to 500bp downstream of the transcription end site.
-        </li>
-
-        <li>
-          Find the closest canonical CRISPR site(s) to genomic position on chromosome 4: 121.819.483 using bedtools closest.
-          <br />
-          Hint: 
-            <ul>
-              <li>
-                First extract all CRISPR sites from the bigBed file in a region 200bp around the location of interest.
-              </li>
-              <li>
-                You can use bedtools which is installed on the virtual machine. Look at the bedtools command "closest".
-              </li>
-            </ul>
-        </li>
-      </ol>
-    </div>
-   </div>
-
     <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
       <div class="exercise">Microarrays:</div>
 
@@ -516,10 +323,17 @@ Bash has a sort function that can sort by specific columns.
 
 
 
+    <div style="margin-top:25px;margin-bottom:20px;clear: both; float: left; display: block; position: relative;">
+      <div class="exercise">eQTLs:</div>
 
-
-
-
+      <div class="file_list" style="clear: both; float: left; display: block; position: relative;">
+        <ol>
+          <li>
+            Exercise here
+          </li>
+        </ol>
+      </div>
+    </div>
 
 
 

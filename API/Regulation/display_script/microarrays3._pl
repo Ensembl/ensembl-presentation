@@ -1,13 +1,8 @@
-#!/usr/bin/env perl
-
-# -----------------------------
-# EnsEMBL Regulation API course
-# Microarray - Probe mapping
-# Excercise 3
-# ----------------------------
-
 use strict;
 use warnings;
+use feature qw(say);
+
+use Data::Dumper;
 
 use Bio::EnsEMBL::Registry;
 
@@ -31,8 +26,7 @@ my $probe = $probe_adaptor->fetch_by_array_probe_probeset_name( $array_name,
 
 # Fetch probe feature adaptor
 my $probe_feature_adaptor
-    = Bio::EnsEMBL::Registry->get_adaptor( 'Human', 'Funcgen',
-    'ProbeFeature' );
+    = Bio::EnsEMBL::Registry->get_adaptor( 'Human', 'Funcgen', 'ProbeFeature' );
 
 # Fetch probe features
 my $probe_features = $probe_feature_adaptor->fetch_all_by_Probe($probe);
@@ -47,3 +41,5 @@ for my $probe_feature (@$probe_features) {
         . $probe_feature->start() . "\t" . 'End: '
         . $probe_feature->end() . "\n";
 }
+
+

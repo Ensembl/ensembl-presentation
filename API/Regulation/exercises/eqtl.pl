@@ -1,0 +1,98 @@
+use strict;
+use warnings;
+use feature qw(say);
+ 
+use HTTP::Tiny;
+use JSON;
+use Data::Dumper;
+local $Data::Dumper::Sortkeys;
+
+my $http = HTTP::Tiny->new();
+ 
+#my $server = 'http://rest.ensembl.org';
+my $server = 'http://ebi-cli-002.ebi.ac.uk:3000';
+
+my $variant = 'rs2736340';
+my $tissue='Whole_Blood';
+
+sub query {
+  my ($ext, $flag) = @_;
+#say "Request: ".$server.$ext;
+  my $result = undef;
+  my $response = $http->get($server.$ext, {
+      headers => { 'Content-type' => 'application/json' }
+      });
+  if($response->{success} != 1){
+    warn $response->{status}.'('.$response->{reason}.'): '.$response->{content};
+    return $result;
+  }
+  else {
+    if(length $response->{content}) {
+      $result = decode_json($response->{content});
+    }
+  }
+  
+  return($result);
+}
+
+
+# 4. You identified a variant (rs2736340) linked to blood related diseases like rheumatoid arthritis, systemic lupus erythematosus and Kawasaki disease. 
+# You suspect that it could influence gene expression as it is within a CTCF binding site (ENSR00000329895)
+# GTEx contains data from whole blood.
+# Using the eQTL REST endpoint
+# http://rest.ensembl.org/documentation/info/species_variant
+# find all genes linked to the >variant< where the >p-value< is lower than 0.00005.
+# Find all descriptions using the example get_description function
+# Fetch the beta statistic for the genes with a significant p-value
+# http://rest.ensembl.org/documentation/info/species_id
+
+my $request="/eqtl/variant_name/homo_sapiens/$variant?statistic=p-value;tissue=$tissue;";
+my $decoded = &query($request);
+
+my $significant_hits_pvalue = {};
+for my $hit (@{$decoded}){
+  next if($hit->{value} > 0.000005);
+  $significant_hits_pvalue->{$hit->{value}} = $hit->{gene};
+}
+
+my $result = {};
+foreach my $value (sort {$a <=> $b} keys %{$significant_hits_pvalue}){
+  my $ensid = $significant_hits_pvalue->{$value};
+  my $description = &get_description($ensid);
+  my $beta = &fetch_beta($ensid);
+  if(exists $result->{$value}){
+    die "Duplicate value: $value $ensid";
+  }
+  $result->{$value}->{rsid} = $variant;
+  $result->{$value}->{stableID} = $ensid;
+  $result->{$value}->{description} = $description;
+  $result->{$value}->{beta} = $beta;
+}
+# sort lowest p-value first
+foreach my $value (sort {$a <=> $b} keys %{$result}){
+  say $result->{$value}->{stableID} ."\tp-value: ". $value ."\tbeta: " .$result->{$value}->{beta} . Dumper($result->{$value}->{description});
+}
+
+# Fetch description for a Ensembl StableID
+sub get_description  {
+  my ($ensid) = @_;
+  my $request="/xrefs/id/$ensid";
+  my $decoded = &query($request);
+  return if(!defined $decoded);
+
+  my $desc = [];
+  for my $xref (@{$decoded}){
+    if (length $xref->{'description'} and  length $xref->{'dbname'}){
+      my $s = $xref->{'description'} .' ['. $xref->{'dbname'} .']';
+      push(@{$desc}, $s);
+    }
+  }
+  return $desc;
+}
+# fetch beta statistic
+sub fetch_beta {
+  my ($ensid) = @_;
+  my $request = "/eqtl/id/homo_sapiens/$ensid?statistic=beta;tissue=$tissue;variant_name=$variant";
+  my $decoded = &query($request);
+  return $decoded->[0]->{value};
+}

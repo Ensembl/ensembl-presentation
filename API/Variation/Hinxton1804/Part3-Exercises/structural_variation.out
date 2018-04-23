@@ -1,0 +1,14 @@
+> Structural variation esv275264 of class CNV
+Chromosome: 22
+
+Outer start: 17915441
+Inner start: 17916210
+
+Inner end: 17920863
+Outer end: 17921877
+
+Start: 17915441
+End:   17921877
+
+> Supporting evidence(s):
+Supporting evidence essv2585520 of class copy_number_loss

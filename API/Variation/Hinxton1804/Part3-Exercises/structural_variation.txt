@@ -1,0 +1,6 @@
+1) Fetch the following information for the structural variation esv275264 in human :
+- Structural variation class
+- Study name and description
+- Coordinates
+2) Fetch the names and the classes (sequence ontology term) of its supporting structural variations.
+

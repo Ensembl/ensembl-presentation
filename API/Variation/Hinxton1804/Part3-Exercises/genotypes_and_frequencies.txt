@@ -1,0 +1,11 @@
+1) Print allele frequencies and allele counts for variant rs4988235
+- Print only results from the following projects: gnomAD, UK10K and TOPMed 
+- $population_name =~ /gnomad|topmed|twinsuk|alspac/i
+- Which population reports frequencies for the C allele?
+2) Print only results for the following 1000 Genomes populations: 1000GENOMES:phase_3:FIN, 1000GENOMES:phase_3:CHB, 1000GENOMES:phase_3:ASW
+- $population_name eq ‘1000GENOMES:phase_3:FIN’
+- Which population has the highest allele frequency for allele A?
+3) Find all samples from population 1000GENOMES:phase_3:ACB with genotype A|G or G|A for variant rs4988235. Print the sample name and the genotype.
+- $variation->get_all_SampleGenotypes($population);
+4) Print population genotype frequencies and counts observed in 1000GENOMES:phase_3:ACB for variant rs4988235.
+- $variation->get_all_PopulationGenotypes($population)

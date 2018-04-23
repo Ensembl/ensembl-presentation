@@ -1,0 +1,7 @@
+1) LD in a region fetch_by_Slice($slice, $population)
+- Compute all LD values for the region chromosome 12 between 11053716-11073715  and population 1000GENOMES:phase_3:CEU
+- Only print results where D’ = 1 and r2 = 1. Print D’ (d_prime), r2 (r2), variation_name1 and variation_name2
+2) LD for a variation feature fetch_by_VariationFeature($vf, $population)
+- Compute all LD values for rs7304579 and population 1000GENOMES:phase_3:YRI
+- Get the VariationFeature for rs7304579
+- Print all results. Print D’ (d_prime), r2 (r2), variation_name1 and variation_name2

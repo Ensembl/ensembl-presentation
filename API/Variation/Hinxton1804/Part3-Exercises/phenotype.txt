@@ -1,0 +1,6 @@
+1) After reading a publication about the first genome-wide association study of habitual caffeine intake you want to collect all phenotype data that has been linked to rs2470893.
+- Fetch all PhenotypeFeatures for variation rs2470893
+- For each PhenotypeFeature print phenotype description, source name, risk allele, p-value and ontology accessions
+2) You want to study all features that have been linked to coffee consumption (phenotype accession = EFO:0007872)
+- Fetch all PhenotypeFeatures for phenotype accession EFO:0007872
+- For each PhenotypeFeature print type, object_id, phenotype description and source name. You can use fetch_all_by_phenotype_accession_source without providing a source

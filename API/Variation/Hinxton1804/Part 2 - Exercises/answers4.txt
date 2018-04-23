@@ -1,0 +1,303 @@
+Var name:              rs1000218110 | Alleles:   T/G | Alt allele: G | Codons:    Tct/Gct | Peptides:  S/A | Peptide:  A | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs370885732 | Alleles:   G/A | Alt allele: A | Codons:    acG/acA | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:               rs780740336 | Alleles:   C/T | Alt allele: T | Codons:    Cgg/Tgg | Peptides:  R/W | Peptide:  W | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs986229474 | Alleles:   A/T | Alt allele: T | Codons:    gaA/gaT | Peptides:  E/D | Peptide:  D | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs751032605 | Alleles:   A/C | Alt allele: C | Codons:    Aat/Cat | Peptides:  N/H | Peptide:  H | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs762868919 | Alleles:   A/T | Alt allele: T | Codons:    Aag/Tag | Peptides:  K/* | Peptide:  * | Sift:           - | PolyPhen:                 -
+Var name:               rs756497175 | Alleles:   A/G | Alt allele: G | Codons:    aAg/aGg | Peptides:  K/R | Peptide:  R | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs754666683 | Alleles:   A/G | Alt allele: G | Codons:    aAg/aGg | Peptides:  K/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs777530787 | Alleles:   C/G | Alt allele: G | Codons:    ctC/ctG | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:              rs1017820517 | Alleles:   C/T | Alt allele: T | Codons:    Cag/Tag | Peptides:  Q/* | Peptide:  * | Sift:           - | PolyPhen:                 -
+Var name:               rs746593810 | Alleles:   G/A | Alt allele: A | Codons:    cGc/cAc | Peptides:  R/H | Peptide:  H | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs199617718 | Alleles:   G/A | Alt allele: A | Codons:    cGg/cAg | Peptides:  R/Q | Peptide:  Q | Sift:   tolerated | PolyPhen: possibly damaging
+Var name:               rs747679046 | Alleles:   A/C | Alt allele: C | Codons:    gAg/gCg | Peptides:  E/A | Peptide:  A | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs762248029 | Alleles:   G/A | Alt allele: A | Codons:    Gca/Aca | Peptides:  A/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs892739531 | Alleles:   A/T | Alt allele: T | Codons:    tAt/tTt | Peptides:  Y/F | Peptide:  F | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs142464168 | Alleles:   C/A | Alt allele: A | Codons:    Cgc/Agc | Peptides:R/S/C | Peptide:  S | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs142464168 | Alleles:   C/T | Alt allele: T | Codons:    Cgc/Tgc | Peptides:R/S/C | Peptide:  C | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs148344428 | Alleles:   G/A | Alt allele: A | Codons:    aGc/aAc | Peptides:  S/N | Peptide:  N | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs775815627 | Alleles:   T/C | Alt allele: C | Codons:    aTg/aCg | Peptides:  M/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs370568362 | Alleles:   G/T | Alt allele: T | Codons:    gcG/gcT | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs751745589 | Alleles:   C/G | Alt allele: G | Codons:    gcC/gcG | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:              rs1051173374 | Alleles:   C/A | Alt allele: A | Codons:    aCc/aAc | Peptides:  T/N | Peptide:  N | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs775418058 | Alleles:   G/A | Alt allele: A | Codons:    gaG/gaA | Peptides:  E/E | Peptide:  E | Sift:           - | PolyPhen:                 -
+Var name:               rs746377303 | Alleles:   C/T | Alt allele: T | Codons:    Cgg/Tgg | Peptides:  R/W | Peptide:  W | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs763189904 | Alleles:   G/A | Alt allele: A | Codons:    Ggt/Agt | Peptides:  G/S | Peptide:  S | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs776551892 | Alleles:   T/C | Alt allele: C | Codons:    agT/agC | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:               rs191266357 | Alleles:   T/C | Alt allele: C | Codons:    aTg/aCg | Peptides:  M/T | Peptide:  T | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs768123978 | Alleles:   A/G | Alt allele: G | Codons:    Ata/Gta | Peptides:  I/V | Peptide:  V | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs773902439 | Alleles:   A/G | Alt allele: G | Codons:    gAa/gGa | Peptides:  E/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs757671133 | Alleles:   C/G | Alt allele: G | Codons:    gCa/gGa | Peptides:  A/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:              rs1037414433 | Alleles: CAT/- | Alt allele: - | Codons: gaCATc/gac | Peptides: DI/D | Peptide:  D | Sift:           - | PolyPhen:                 -
+Var name:               rs376456473 | Alleles:   T/C | Alt allele: C | Codons:    aTt/aCt | Peptides:  I/T | Peptide:  T | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs750970764 | Alleles:   C/G | Alt allele: G | Codons:    Ctg/Gtg | Peptides:  L/V | Peptide:  V | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs191293085 | Alleles:   G/A | Alt allele: A | Codons:    Gaa/Aaa | Peptides:  E/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs145385559 | Alleles:   A/C | Alt allele: C | Codons:    aAt/aCt | Peptides:N/T/S | Peptide:  T | Sift: deleterious | PolyPhen:            benign
+Var name:               rs145385559 | Alleles:   A/G | Alt allele: G | Codons:    aAt/aGt | Peptides:N/T/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs774455573 | Alleles:   C/A | Alt allele: A | Codons:    ggC/ggA | Peptides:G/G/G | Peptide:  G | Sift:           - | PolyPhen:                 -
+Var name:               rs774455573 | Alleles:   C/G | Alt allele: G | Codons:    ggC/ggG | Peptides:G/G/G | Peptide:  G | Sift:           - | PolyPhen:                 -
+Var name:               rs766025730 | Alleles:   T/C | Alt allele: C | Codons:    Ttc/Ctc | Peptides:  F/L | Peptide:  L | Sift:   tolerated | PolyPhen: probably damaging
+Var name:              rs1039399869 | Alleles:   A/T | Alt allele: T | Codons:    cAc/cTc | Peptides:  H/L | Peptide:  L | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs762218575 | Alleles:   G/A | Alt allele: A | Codons:    Gaa/Aaa | Peptides:  E/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs764677028 | Alleles:   C/A | Alt allele: A | Codons:    gcC/gcA | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs766636474 | Alleles:   C/G | Alt allele: G | Codons:    aCg/aGg | Peptides:T/R/M | Peptide:  R | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs766636474 | Alleles:   C/T | Alt allele: T | Codons:    aCg/aTg | Peptides:T/R/M | Peptide:  M | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs200255491 | Alleles:   A/G | Alt allele: G | Codons:    Atc/Gtc | Peptides:  I/V | Peptide:  V | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs773706542 | Alleles:   G/T | Alt allele: T | Codons:    Gcc/Tcc | Peptides:  A/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:                 rs3948665 | Alleles:   C/T | Alt allele: T | Codons:    Cta/Tta | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs563784071 | Alleles:   C/T | Alt allele: T | Codons:    gcC/gcT | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs771724693 | Alleles:   -/T | Alt allele: T | Codons:   act/acTt | Peptides: T/TX | Peptide: TX | Sift:           - | PolyPhen:                 -
+Var name:               rs922306492 | Alleles:   C/T | Alt allele: T | Codons:    Cag/Tag | Peptides:  Q/* | Peptide:  * | Sift:           - | PolyPhen:                 -
+Var name:               rs369674741 | Alleles:   C/A | Alt allele: A | Codons:    ctC/ctA | Peptides:L/L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs369674741 | Alleles:   C/G | Alt allele: G | Codons:    ctC/ctG | Peptides:L/L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs367622694 | Alleles:   T/C | Alt allele: C | Codons:    taT/taC | Peptides:  Y/Y | Peptide:  Y | Sift:           - | PolyPhen:                 -
+Var name:                 rs1062478 | Alleles:   G/A | Alt allele: A | Codons:    cGc/cAc | Peptides:  R/H | Peptide:  H | Sift: deleterious | PolyPhen:            benign
+Var name:               rs761447742 | Alleles:   A/G | Alt allele: G | Codons:    Atc/Gtc | Peptides:  I/V | Peptide:  V | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs767616167 | Alleles:   C/T | Alt allele: T | Codons:    Cgg/Tgg | Peptides:  R/W | Peptide:  W | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs565460723 | Alleles:   C/A | Alt allele: A | Codons:    gCg/gAg | Peptides:  A/E | Peptide:  E | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs749685904 | Alleles:   C/T | Alt allele: T | Codons:    gcC/gcT | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs747525966 | Alleles:   A/G | Alt allele: G | Codons:    gAg/gGg | Peptides:  E/G | Peptide:  G | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs993356144 | Alleles:   A/C | Alt allele: C | Codons:    Acc/Ccc | Peptides:  T/P | Peptide:  P | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs760680004 | Alleles:   G/C | Alt allele: C | Codons:    caG/caC | Peptides:  Q/H | Peptide:  H | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs760628848 | Alleles:   C/G | Alt allele: G | Codons:    taC/taG | Peptides:  Y/* | Peptide:  * | Sift:           - | PolyPhen:                 -
+Var name:              rs1029935397 | Alleles:   A/G | Alt allele: G | Codons:    Agc/Ggc | Peptides:  S/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs899312644 | Alleles:   A/G | Alt allele: G | Codons:    gAa/gGa | Peptides:  E/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs964211802 | Alleles:   C/T | Alt allele: T | Codons:    agC/agT | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:               rs576638260 | Alleles:   A/G | Alt allele: G | Codons:    gaA/gaG | Peptides:  E/E | Peptide:  E | Sift:           - | PolyPhen:                 -
+Var name:               rs765779520 | Alleles:   G/A | Alt allele: A | Codons:    ctG/ctA | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs764003311 | Alleles:   G/A | Alt allele: A | Codons:    Ggg/Agg | Peptides:  G/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs201311104 | Alleles:   A/G | Alt allele: G | Codons:    caA/caG | Peptides:  Q/Q | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs751620593 | Alleles:   C/T | Alt allele: T | Codons:    cCt/cTt | Peptides:  P/L | Peptide:  L | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs184543678 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:Q/Q/H | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs184543678 | Alleles:   G/C | Alt allele: C | Codons:    caG/caC | Peptides:Q/Q/H | Peptide:  H | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs377158214 | Alleles:   T/C | Alt allele: C | Codons:    tTt/tCt | Peptides:  F/S | Peptide:  S | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs536323039 | Alleles:   A/T | Alt allele: T | Codons:    ccA/ccT | Peptides:  P/P | Peptide:  P | Sift:           - | PolyPhen:                 -
+Var name:               rs781595848 | Alleles:   C/T | Alt allele: T | Codons:    cCg/cTg | Peptides:  P/L | Peptide:  L | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs764230542 | Alleles:   T/C | Alt allele: C | Codons:    gcT/gcC | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs779469668 | Alleles:   T/G | Alt allele: G | Codons:    tTc/tGc | Peptides:  F/C | Peptide:  C | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs911713623 | Alleles:   C/T | Alt allele: T | Codons:    ggC/ggT | Peptides:  G/G | Peptide:  G | Sift:           - | PolyPhen:                 -
+Var name:               rs370195165 | Alleles:   G/A | Alt allele: A | Codons:    aGc/aAc | Peptides:  S/N | Peptide:  N | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs144527066 | Alleles:   G/A | Alt allele: A | Codons:    Gtg/Atg | Peptides:  V/M | Peptide:  M | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs756066500 | Alleles:   C/T | Alt allele: T | Codons:    acC/acT | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:               rs762943432 | Alleles:   C/G | Alt allele: G | Codons:    ctC/ctG | Peptides:L/L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs762943432 | Alleles:   C/T | Alt allele: T | Codons:    ctC/ctT | Peptides:L/L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs780282208 | Alleles:   G/A | Alt allele: A | Codons:    Gtc/Atc | Peptides:  V/I | Peptide:  I | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs765115246 | Alleles:   A/T | Alt allele: T | Codons:    cAg/cTg | Peptides:  Q/L | Peptide:  L | Sift: deleterious | PolyPhen:            benign
+Var name:               rs759544554 | Alleles:   G/C | Alt allele: C | Codons:    Gac/Cac | Peptides:  D/H | Peptide:  H | Sift: deleterious | PolyPhen:            benign
+Var name:               rs779472768 | Alleles:   G/T | Alt allele: T | Codons:    gtG/gtT | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs901731852 | Alleles:   T/C | Alt allele: C | Codons:    atT/atC | Peptides:  I/I | Peptide:  I | Sift:           - | PolyPhen:                 -
+Var name:               rs780449875 | Alleles:   C/T | Alt allele: T | Codons:    ccC/ccT | Peptides:  P/P | Peptide:  P | Sift:           - | PolyPhen:                 -
+Var name:               rs113054259 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs769561303 | Alleles:   A/G | Alt allele: G | Codons:    gAa/gGa | Peptides:  E/G | Peptide:  G | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs771030252 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:  Q/Q | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs756286274 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:  E/K | Peptide:  K | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs758199458 | Alleles:   G/C | Alt allele: C | Codons:    aaG/aaC | Peptides:  K/N | Peptide:  N | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs202167235 | Alleles:   G/A | Alt allele: A | Codons:    Gtg/Atg | Peptides:  V/M | Peptide:  M | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs927155815 | Alleles:   G/A | Alt allele: A | Codons:    cGg/cAg | Peptides:  R/Q | Peptide:  Q | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs762489074 | Alleles:   C/T | Alt allele: T | Codons:    Ctg/Ttg | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs551642916 | Alleles:   C/A | Alt allele: A | Codons:    Cat/Aat | Peptides:  H/N | Peptide:  N | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs761886074 | Alleles:   G/A | Alt allele: A | Codons:    aGg/aAg | Peptides:  R/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs933691817 | Alleles:   A/G | Alt allele: G | Codons:    Aac/Gac | Peptides:  N/D | Peptide:  D | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs774463734 | Alleles:   A/T | Alt allele: T | Codons:    aaA/aaT | Peptides:  K/N | Peptide:  N | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs749459821 | Alleles:   G/A | Alt allele: A | Codons:    Gaa/Aaa | Peptides:E/K/Q | Peptide:  K | Sift: deleterious - low confidence | PolyPhen:            benign
+Var name:               rs749459821 | Alleles:   G/C | Alt allele: C | Codons:    Gaa/Caa | Peptides:E/K/Q | Peptide:  Q | Sift: deleterious - low confidence | PolyPhen: possibly damaging
+Var name:               rs944340308 | Alleles:   A/G | Alt allele: G | Codons:    acA/acG | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:               rs770611717 | Alleles:   C/G | Alt allele: G | Codons:    gCt/gGt | Peptides:  A/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs376058719 | Alleles:   T/A | Alt allele: A | Codons:    Tac/Aac | Peptides:  Y/N | Peptide:  N | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs201091442 | Alleles:   T/A | Alt allele: A | Codons:    gTg/gAg | Peptides:  V/E | Peptide:  E | Sift: deleterious | PolyPhen:            benign
+Var name:               rs774262048 | Alleles:   C/T | Alt allele: T | Codons:    tcC/tcT | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:               rs773444295 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:  Q/Q | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs753702643 | Alleles:   C/A | Alt allele: A | Codons:    aaC/aaA | Peptides:  N/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs937421633 | Alleles:   G/C | Alt allele: C | Codons:    Gtg/Ctg | Peptides:  V/L | Peptide:  L | Sift: deleterious - low confidence | PolyPhen:            benign
+Var name:               rs144630885 | Alleles:   A/G | Alt allele: G | Codons:    aAt/aGt | Peptides:N/S/I | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs144630885 | Alleles:   A/T | Alt allele: T | Codons:    aAt/aTt | Peptides:N/S/I | Peptide:  I | Sift:   tolerated | PolyPhen:            benign
+Var name:                 rs1803817 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:Q/Q/H | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:                 rs1803817 | Alleles:   G/C | Alt allele: C | Codons:    caG/caC | Peptides:Q/Q/H | Peptide:  H | Sift: deleterious - low confidence | PolyPhen:            benign
+Var name:                 rs1042228 | Alleles:   A/C | Alt allele: C | Codons:    Act/Cct | Peptides:  T/P | Peptide:  P | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs758429843 | Alleles:   G/A | Alt allele: A | Codons:    Gtc/Atc | Peptides:  V/I | Peptide:  I | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs769944304 | Alleles:   A/G | Alt allele: G | Codons:    cAg/cGg | Peptides:  Q/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs753332465 | Alleles:   G/T | Alt allele: T | Codons:    Gcg/Tcg | Peptides:  A/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs771391455 | Alleles:   G/A | Alt allele: A | Codons:    Gtg/Atg | Peptides:  V/M | Peptide:  M | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs764621006 | Alleles:   G/A | Alt allele: A | Codons:    gtG/gtA | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs745901138 | Alleles:   G/A | Alt allele: A | Codons:    ggG/ggA | Peptides:  G/G | Peptide:  G | Sift:           - | PolyPhen:                 -
+Var name:               rs749632850 | Alleles:   A/T | Alt allele: T | Codons:    Acc/Tcc | Peptides:  T/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs527359061 | Alleles:   C/A | Alt allele: A | Codons:    cCc/cAc | Peptides:P/H/L | Peptide:  H | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs527359061 | Alleles:   C/T | Alt allele: T | Codons:    cCc/cTc | Peptides:P/H/L | Peptide:  L | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs769044481 | Alleles:   T/C | Alt allele: C | Codons:    acT/acC | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:               rs918813712 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs779395342 | Alleles:   T/C | Alt allele: C | Codons:    aTt/aCt | Peptides:  I/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs755186050 | Alleles:   C/A | Alt allele: A | Codons:    ttC/ttA | Peptides:  F/L | Peptide:  L | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs755409739 | Alleles:   G/A | Alt allele: A | Codons:    acG/acA | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:               rs764994452 | Alleles:   G/A | Alt allele: A | Codons:    gaG/gaA | Peptides:  E/E | Peptide:  E | Sift:           - | PolyPhen:                 -
+Var name:               rs539950609 | Alleles:   C/T | Alt allele: T | Codons:    cCc/cTc | Peptides:  P/L | Peptide:  L | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs753397010 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:  E/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs748176535 | Alleles:   A/G | Alt allele: G | Codons:    cAg/cGg | Peptides:  Q/R | Peptide:  R | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs750117425 | Alleles:   T/C | Alt allele: C | Codons:    gtT/gtC | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs755133039 | Alleles:   C/G | Alt allele: G | Codons:    Cca/Gca | Peptides:  P/A | Peptide:  A | Sift: deleterious | PolyPhen:            benign
+Var name:               rs760111166 | Alleles:   C/T | Alt allele: T | Codons:    atC/atT | Peptides:  I/I | Peptide:  I | Sift:           - | PolyPhen:                 -
+Var name:               rs762817746 | Alleles:   T/- | Alt allele: - | Codons:     gcT/gc | Peptides:  A/X | Peptide:  X | Sift:           - | PolyPhen:                 -
+Var name:               rs201034010 | Alleles:   A/C | Alt allele: C | Codons:    Aag/Cag | Peptides:  K/Q | Peptide:  Q | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs764770209 | Alleles:   G/C | Alt allele: C | Codons:    aGc/aCc | Peptides:  S/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs752626063 | Alleles:   C/T | Alt allele: T | Codons:    gcC/gcT | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs750325599 | Alleles:   C/A | Alt allele: A | Codons:    Ccc/Acc | Peptides:  P/T | Peptide:  T | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs142587247 | Alleles:   A/C | Alt allele: C | Codons:    gAg/gCg | Peptides:  E/A | Peptide:  A | Sift: deleterious | PolyPhen:            benign
+Var name:               rs143021274 | Alleles:   C/G | Alt allele: G | Codons:    gCt/gGt | Peptides:  A/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs756343629 | Alleles:   C/G | Alt allele: G | Codons:    gaC/gaG | Peptides:  D/E | Peptide:  E | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs375946541 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:  E/K | Peptide:  K | Sift: deleterious | PolyPhen:            benign
+Var name:              rs1032845664 | Alleles:   T/C | Alt allele: C | Codons:    tcT/tcC | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:               rs749374918 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:  E/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs199923813 | Alleles:   G/A | Alt allele: A | Codons:    cGa/cAa | Peptides:  R/Q | Peptide:  Q | Sift: deleterious | PolyPhen:            benign
+Var name:               rs764421075 | Alleles:   C/G | Alt allele: G | Codons:    aCa/aGa | Peptides:  T/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs959037648 | Alleles:   T/C | Alt allele: C | Codons:    tTt/tCt | Peptides:  F/S | Peptide:  S | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs141855441 | Alleles:   C/T | Alt allele: T | Codons:    Cgc/Tgc | Peptides:  R/C | Peptide:  C | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs768206629 | Alleles:   G/A | Alt allele: A | Codons:    Gtg/Atg | Peptides:  V/M | Peptide:  M | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs756555189 | Alleles:  -/GT | Alt allele:GT | Codons:       -/GT | Peptides:  -/X | Peptide:  X | Sift:           - | PolyPhen:                 -
+Var name:               rs753521506 | Alleles:   A/C | Alt allele: C | Codons:    gAa/gCa | Peptides:  E/A | Peptide:  A | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs765776735 | Alleles:   A/G | Alt allele: G | Codons:    aaA/aaG | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs759783549 | Alleles:   G/C | Alt allele: C | Codons:    aaG/aaC | Peptides:  K/N | Peptide:  N | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs201803546 | Alleles:   G/A | Alt allele: A | Codons:    cgG/cgA | Peptides:  R/R | Peptide:  R | Sift:           - | PolyPhen:                 -
+Var name:               rs564994288 | Alleles:   C/T | Alt allele: T | Codons:    ccC/ccT | Peptides:  P/P | Peptide:  P | Sift:           - | PolyPhen:                 -
+Var name:               rs369216531 | Alleles:   C/T | Alt allele: T | Codons:    gaC/gaT | Peptides:  D/D | Peptide:  D | Sift:           - | PolyPhen:                 -
+Var name:               rs775086424 | Alleles:   C/T | Alt allele: T | Codons:    Ccc/Tcc | Peptides:  P/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs866990185 | Alleles:   C/A | Alt allele: A | Codons:    aCg/aAg | Peptides:T/K/M | Peptide:  K | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs866990185 | Alleles:   C/T | Alt allele: T | Codons:    aCg/aTg | Peptides:T/K/M | Peptide:  M | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs144746421 | Alleles:   T/C | Alt allele: C | Codons:    cTg/cCg | Peptides:  L/P | Peptide:  P | Sift:   tolerated | PolyPhen: possibly damaging
+Var name:               rs780835389 | Alleles:   G/A | Alt allele: A | Codons:    Gtg/Atg | Peptides:  V/M | Peptide:  M | Sift: deleterious | PolyPhen:            benign
+Var name:               rs556973575 | Alleles:   G/A | Alt allele: A | Codons:    aGt/aAt | Peptides:  S/N | Peptide:  N | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs749174239 | Alleles:   C/T | Alt allele: T | Codons:    aCg/aTg | Peptides:  T/M | Peptide:  M | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs776622503 | Alleles:   C/T | Alt allele: T | Codons:    taC/taT | Peptides:  Y/Y | Peptide:  Y | Sift:           - | PolyPhen:                 -
+Var name:               rs199520088 | Alleles:   A/C | Alt allele: C | Codons:    tAc/tCc | Peptides:  Y/S | Peptide:  S | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs779521467 | Alleles:   A/C | Alt allele: C | Codons:    Atc/Ctc | Peptides:  I/L | Peptide:  L | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs545116794 | Alleles:   G/C | Alt allele: C | Codons:    Gta/Cta | Peptides:  V/L | Peptide:  L | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs750656458 | Alleles:   C/T | Alt allele: T | Codons:    ccC/ccT | Peptides:  P/P | Peptide:  P | Sift:           - | PolyPhen:                 -
+Var name:               rs539277079 | Alleles:   T/C | Alt allele: C | Codons:    aTt/aCt | Peptides:  I/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs749320398 | Alleles:   C/G | Alt allele: G | Codons:    Cag/Gag | Peptides:  Q/E | Peptide:  E | Sift: deleterious | PolyPhen:            benign
+Var name:               rs374042199 | Alleles:   A/C | Alt allele: C | Codons:    Aag/Cag | Peptides:  K/Q | Peptide:  Q | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs776731509 | Alleles:   G/C | Alt allele: C | Codons:    Gaa/Caa | Peptides:  E/Q | Peptide:  Q | Sift: deleterious | PolyPhen:            benign
+Var name:               rs770400725 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:  E/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs757758013 | Alleles:   T/C | Alt allele: C | Codons:    aTg/aCg | Peptides:  M/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs778270440 | Alleles:   C/T | Alt allele: T | Codons:    atC/atT | Peptides:  I/I | Peptide:  I | Sift:           - | PolyPhen:                 -
+Var name:               rs779602240 | Alleles:   C/T | Alt allele: T | Codons:    gCc/gTc | Peptides:  A/V | Peptide:  V | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs776356873 | Alleles:   C/T | Alt allele: T | Codons:    cgC/cgT | Peptides:  R/R | Peptide:  R | Sift:           - | PolyPhen:                 -
+Var name:               rs147640045 | Alleles:   A/C | Alt allele: C | Codons:    gcA/gcC | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:                rs55672055 | Alleles:   G/A | Alt allele: A | Codons:    cGc/cAc | Peptides:  R/H | Peptide:  H | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs151186423 | Alleles:   T/C | Alt allele: C | Codons:    taT/taC | Peptides:  Y/Y | Peptide:  Y | Sift:           - | PolyPhen:                 -
+Var name:               rs746057672 | Alleles:   C/G | Alt allele: G | Codons:    gcC/gcG | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs771776017 | Alleles:   A/C | Alt allele: C | Codons:    gcA/gcC | Peptides:  A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs144966634 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs920868867 | Alleles:  TT/- | Alt allele: - | Codons:      TTt/t | Peptides:  F/X | Peptide:  X | Sift:           - | PolyPhen:                 -
+Var name:               rs778062760 | Alleles:   T/C | Alt allele: C | Codons:    tTt/tCt | Peptides:  F/S | Peptide:  S | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs758316677 | Alleles:   C/T | Alt allele: T | Codons:    aaC/aaT | Peptides:  N/N | Peptide:  N | Sift:           - | PolyPhen:                 -
+Var name:               rs779258666 | Alleles:  AG/- | Alt allele: - | Codons:acAGag/acag | Peptides:TE/TX | Peptide: TX | Sift:           - | PolyPhen:                 -
+Var name:              rs1049028391 | Alleles:   T/G | Alt allele: G | Codons:    tcT/tcG | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:               rs375362942 | Alleles:   G/A | Alt allele: A | Codons:    gtG/gtA | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs760287046 | Alleles:   T/C | Alt allele: C | Codons:    acT/acC | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:               rs755711294 | Alleles:   G/A | Alt allele: A | Codons:    gtG/gtA | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs754477446 | Alleles:   A/G | Alt allele: G | Codons:    aAt/aGt | Peptides:  N/S | Peptide:  S | Sift: deleterious | PolyPhen:            benign
+Var name:               rs962354909 | Alleles:   C/A | Alt allele: A | Codons:    ttC/ttA | Peptides:  F/L | Peptide:  L | Sift: deleterious | PolyPhen: possibly damaging
+Var name:                 rs1981656 | Alleles:   A/T | Alt allele: T | Codons:    Aca/Tca | Peptides:  T/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs200095319 | Alleles:   A/C | Alt allele: C | Codons:    Att/Ctt | Peptides:  I/L | Peptide:  L | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs371669858 | Alleles:   A/G | Alt allele: G | Codons:    Agt/Ggt | Peptides:  S/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs377684383 | Alleles:   A/G | Alt allele: G | Codons:    acA/acG | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:                rs56196860 | Alleles:   C/A | Alt allele: A | Codons:    aaC/aaA | Peptides:  N/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs200923951 | Alleles:   G/A | Alt allele: A | Codons:    acG/acA | Peptides:  T/T | Peptide:  T | Sift:           - | PolyPhen:                 -
+Var name:              rs1020219262 | Alleles:   G/C | Alt allele: C | Codons:    atG/atC | Peptides:  M/I | Peptide:  I | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs746651193 | Alleles:   C/T | Alt allele: T | Codons:    Cgc/Tgc | Peptides:  R/C | Peptide:  C | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs763351881 | Alleles:   G/T | Alt allele: T | Codons:    gtG/gtT | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs767595993 | Alleles:   C/G | Alt allele: G | Codons:    Ctg/Gtg | Peptides:L/V/L | Peptide:  V | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs767595993 | Alleles:   C/T | Alt allele: T | Codons:    Ctg/Ttg | Peptides:L/V/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs773954350 | Alleles:   G/A | Alt allele: A | Codons:    taG/taA | Peptides:  */* | Peptide:  * | Sift:           - | PolyPhen:                 -
+Var name:               rs772523766 | Alleles:   G/A | Alt allele: A | Codons:    cGg/cAg | Peptides:  R/Q | Peptide:  Q | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs776865658 | Alleles:   C/T | Alt allele: T | Codons:    Cgg/Tgg | Peptides:  R/W | Peptide:  W | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs746579974 | Alleles: GAA/- | Alt allele: - | Codons: atGAAg/atg | Peptides: MK/M | Peptide:  M | Sift:           - | PolyPhen:                 -
+Var name:               rs775471398 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs765609799 | Alleles:   C/G | Alt allele: G | Codons:    gCc/gGc | Peptides:  A/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs138530244 | Alleles:   G/A | Alt allele: A | Codons:    Gtg/Atg | Peptides:  V/M | Peptide:  M | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs925874800 | Alleles:   C/A | Alt allele: A | Codons:    atC/atA | Peptides:  I/I | Peptide:  I | Sift:           - | PolyPhen:                 -
+Var name:               rs369826677 | Alleles:   G/A | Alt allele: A | Codons:    cGg/cAg | Peptides:  R/Q | Peptide:  Q | Sift: deleterious | PolyPhen:            benign
+Var name:               rs143820830 | Alleles:   A/G | Alt allele: G | Codons:    aAg/aGg | Peptides:  K/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs771131216 | Alleles:   A/G | Alt allele: G | Codons:    gAg/gGg | Peptides:  E/G | Peptide:  G | Sift: deleterious | PolyPhen:            benign
+Var name:               rs528424327 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:  E/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs767313392 | Alleles:   G/A | Alt allele: A | Codons:    Gcc/Acc | Peptides:  A/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs752845341 | Alleles: GAG/- | Alt allele: - | Codons:      GAG/- | Peptides:  E/- | Peptide:  - | Sift:           - | PolyPhen:                 -
+Var name:               rs759514100 | Alleles:   G/A | Alt allele: A | Codons:    atG/atA | Peptides:  M/I | Peptide:  I | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs370798180 | Alleles:   C/T | Alt allele: T | Codons:    Ctg/Ttg | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs745332136 | Alleles:   A/T | Alt allele: T | Codons:    gtA/gtT | Peptides:  V/V | Peptide:  V | Sift:           - | PolyPhen:                 -
+Var name:               rs752485526 | Alleles:   A/C | Alt allele: C | Codons:    gAg/gCg | Peptides:  E/A | Peptide:  A | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs143403049 | Alleles:   A/G | Alt allele: G | Codons:    Aag/Gag | Peptides:  K/E | Peptide:  E | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs774772140 | Alleles:   G/A | Alt allele: A | Codons:    cGc/cAc | Peptides:  R/H | Peptide:  H | Sift: deleterious | PolyPhen:            benign
+Var name:               rs375588019 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs751486111 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:Q/Q/H | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs751486111 | Alleles:   G/T | Alt allele: T | Codons:    caG/caT | Peptides:Q/Q/H | Peptide:  H | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs867415332 | Alleles:   T/C | Alt allele: C | Codons:    Tag/Cag | Peptides:  */Q | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs763938921 | Alleles:   C/T | Alt allele: T | Codons:    agC/agT | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:               rs371138035 | Alleles:   C/T | Alt allele: T | Codons:    Cgc/Tgc | Peptides:  R/C | Peptide:  C | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs776764262 | Alleles:   T/C | Alt allele: C | Codons:    taT/taC | Peptides:  Y/Y | Peptide:  Y | Sift:           - | PolyPhen:                 -
+Var name:               rs750127588 | Alleles:   T/C | Alt allele: C | Codons:    Tcg/Ccg | Peptides:  S/P | Peptide:  P | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs879015932 | Alleles:   C/A | Alt allele: A | Codons:    aaC/aaA | Peptides:  N/K | Peptide:  K | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs200588430 | Alleles:   C/G | Alt allele: G | Codons:    aCa/aGa | Peptides:  T/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:              rs1042734137 | Alleles:   G/C | Alt allele: C | Codons:    Gaa/Caa | Peptides:  E/Q | Peptide:  Q | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs779093155 | Alleles:   C/G | Alt allele: G | Codons:    gCc/gGc | Peptides:  A/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs201879189 | Alleles:   G/A | Alt allele: A | Codons:    cGg/cAg | Peptides:  R/Q | Peptide:  Q | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs932761417 | Alleles:   G/A | Alt allele: A | Codons:    gaG/gaA | Peptides:  E/E | Peptide:  E | Sift:           - | PolyPhen:                 -
+Var name:               rs778925433 | Alleles:   C/A | Alt allele: A | Codons:    Ctt/Att | Peptides:  L/I | Peptide:  I | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs200798844 | Alleles:   G/T | Alt allele: T | Codons:    gGt/gTt | Peptides:  G/V | Peptide:  V | Sift: deleterious | PolyPhen: probably damaging
+Var name:              rs1033322201 | Alleles:   G/A | Alt allele: A | Codons:    gaG/gaA | Peptides:  E/E | Peptide:  E | Sift:           - | PolyPhen:                 -
+Var name:               rs762958722 | Alleles:   G/A | Alt allele: A | Codons:    gGa/gAa | Peptides:  G/E | Peptide:  E | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs747981676 | Alleles:   G/A | Alt allele: A | Codons:    ctG/ctA | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs747396122 | Alleles:   A/C | Alt allele: C | Codons:    Agc/Cgc | Peptides:  S/R | Peptide:  R | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs776791993 | Alleles:   C/G | Alt allele: G | Codons:    Cag/Gag | Peptides:  Q/E | Peptide:  E | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs150316795 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs762125645 | Alleles:   T/G | Alt allele: G | Codons:    gTc/gGc | Peptides:  V/G | Peptide:  G | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs747165184 | Alleles:   A/G | Alt allele: G | Codons:    cAc/cGc | Peptides:  H/R | Peptide:  R | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs150655432 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:  Q/Q | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs753568828 | Alleles:   G/A | Alt allele: A | Codons:    caG/caA | Peptides:  Q/Q | Peptide:  Q | Sift:           - | PolyPhen:                 -
+Var name:               rs757116153 | Alleles:   G/C | Alt allele: C | Codons:    gaG/gaC | Peptides:  E/D | Peptide:  D | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs866472471 | Alleles:   C/T | Alt allele: T | Codons:    ccC/ccT | Peptides:  P/P | Peptide:  P | Sift:           - | PolyPhen:                 -
+Var name:               rs199705099 | Alleles:   C/G | Alt allele: G | Codons:    Ctc/Gtc | Peptides:L/V/F | Peptide:  V | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs199705099 | Alleles:   C/T | Alt allele: T | Codons:    Ctc/Ttc | Peptides:L/V/F | Peptide:  F | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs140321109 | Alleles:   A/G | Alt allele: G | Codons:    aAg/aGg | Peptides:  K/R | Peptide:  R | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs891675403 | Alleles:   A/G | Alt allele: G | Codons:    aAt/aGt | Peptides:  N/S | Peptide:  S | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs771735767 | Alleles:   C/T | Alt allele: T | Codons:    caC/caT | Peptides:  H/H | Peptide:  H | Sift:           - | PolyPhen:                 -
+Var name:               rs972375721 | Alleles:   T/C | Alt allele: C | Codons:    Tac/Cac | Peptides:  Y/H | Peptide:  H | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs778781262 | Alleles:   A/G | Alt allele: G | Codons:    gAg/gGg | Peptides:  E/G | Peptide:  G | Sift:   tolerated | PolyPhen:            benign
+Var name:                 rs1042233 | Alleles:   A/C | Alt allele: C | Codons:    Acg/Ccg | Peptides:  T/P | Peptide:  P | Sift: tolerated - low confidence | PolyPhen:            benign
+Var name:               rs751800526 | Alleles:   C/G | Alt allele: G | Codons:    atC/atG | Peptides:I/M/I | Peptide:  M | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs751800526 | Alleles:   C/T | Alt allele: T | Codons:    atC/atT | Peptides:I/M/I | Peptide:  I | Sift:           - | PolyPhen:                 -
+Var name:               rs367800795 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs773339152 | Alleles:   G/A | Alt allele: A | Codons:    Gcc/Acc | Peptides:A/T/S | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs773339152 | Alleles:   G/T | Alt allele: T | Codons:    Gcc/Tcc | Peptides:A/T/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs200925573 | Alleles:   C/G | Alt allele: G | Codons:    gcC/gcG | Peptides:A/A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs200925573 | Alleles:   C/T | Alt allele: T | Codons:    gcC/gcT | Peptides:A/A/A | Peptide:  A | Sift:           - | PolyPhen:                 -
+Var name:               rs766142249 | Alleles:   G/A | Alt allele: A | Codons:    cGc/cAc | Peptides:  R/H | Peptide:  H | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs758569908 | Alleles:   A/G | Alt allele: G | Codons:    Aag/Gag | Peptides:  K/E | Peptide:  E | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs375816184 | Alleles:   A/T | Alt allele: T | Codons:    ctA/ctT | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs772597983 | Alleles:   G/A | Alt allele: A | Codons:    Gag/Aag | Peptides:E/K/Q | Peptide:  K | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs772597983 | Alleles:   G/C | Alt allele: C | Codons:    Gag/Cag | Peptides:E/K/Q | Peptide:  Q | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs148503247 | Alleles:   C/T | Alt allele: T | Codons:    taC/taT | Peptides:  Y/Y | Peptide:  Y | Sift:           - | PolyPhen:                 -
+Var name:               rs757016850 | Alleles:   G/T | Alt allele: T | Codons:    aaG/aaT | Peptides:  K/N | Peptide:  N | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs761345277 | Alleles:   T/C | Alt allele: C | Codons:    aTa/aCa | Peptides:  I/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs751370254 | Alleles:   C/G | Alt allele: G | Codons:    cgC/cgG | Peptides:  R/R | Peptide:  R | Sift:           - | PolyPhen:                 -
+Var name:              rs1031996000 | Alleles:   G/T | Alt allele: T | Codons:    Gca/Tca | Peptides:  A/S | Peptide:  S | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs762081103 | Alleles:   A/G | Alt allele: G | Codons:    Aag/Gag | Peptides:  K/E | Peptide:  E | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs150317804 | Alleles:   A/G | Alt allele: G | Codons:    tcA/tcG | Peptides:  S/S | Peptide:  S | Sift:           - | PolyPhen:                 -
+Var name:              rs1011831601 | Alleles:   G/T | Alt allele: T | Codons:    ggG/ggT | Peptides:  G/G | Peptide:  G | Sift:           - | PolyPhen:                 -
+Var name:               rs753001598 | Alleles:   C/A | Alt allele: A | Codons:    ttC/ttA | Peptides:  F/L | Peptide:  L | Sift:   tolerated | PolyPhen: probably damaging
+Var name:               rs976972775 | Alleles:GGAG/- | Alt allele: - | Codons:  aaGGAG/aa | Peptides: KE/X | Peptide:  X | Sift:           - | PolyPhen:                 -
+Var name:               rs374757727 | Alleles:   G/A | Alt allele: A | Codons:    ctG/ctA | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -
+Var name:               rs982485987 | Alleles:   G/C | Alt allele: C | Codons:    aGc/aCc | Peptides:  S/T | Peptide:  T | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs748582920 | Alleles:  -/AG | Alt allele:AG | Codons:  aag/aAGag | Peptides: K/KX | Peptide: KX | Sift:           - | PolyPhen:                 -
+Var name:               rs955192758 | Alleles:   A/G | Alt allele: G | Codons:    gAc/gGc | Peptides:  D/G | Peptide:  G | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs781522332 | Alleles:   A/- | Alt allele: - | Codons:     Aac/ac | Peptides:  N/X | Peptide:  X | Sift:           - | PolyPhen:                 -
+Var name:               rs773048522 | Alleles:   G/A | Alt allele: A | Codons:    aaG/aaA | Peptides:  K/K | Peptide:  K | Sift:           - | PolyPhen:                 -
+Var name:               rs759178167 | Alleles:   C/T | Alt allele: T | Codons:    gCa/gTa | Peptides:  A/V | Peptide:  V | Sift:   tolerated | PolyPhen:            benign
+Var name:               rs772045995 | Alleles:   G/A | Alt allele: A | Codons:    Gga/Aga | Peptides:  G/R | Peptide:  R | Sift: deleterious | PolyPhen: probably damaging
+Var name:               rs982827966 | Alleles:   A/G | Alt allele: G | Codons:    aAg/aGg | Peptides:  K/R | Peptide:  R | Sift: deleterious | PolyPhen:            benign
+Var name:               rs778832603 | Alleles:   C/G | Alt allele: G | Codons:    ggC/ggG | Peptides:  G/G | Peptide:  G | Sift:           - | PolyPhen:                 -
+Var name:               rs372836178 | Alleles:   C/T | Alt allele: T | Codons:    Cgg/Tgg | Peptides:  R/W | Peptide:  W | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs543150665 | Alleles:   G/A | Alt allele: A | Codons:    gGc/gAc | Peptides:  G/D | Peptide:  D | Sift: deleterious | PolyPhen: probably damaging
+Var name:              rs1014212097 | Alleles:   C/A | Alt allele: A | Codons:    Cga/Aga | Peptides:R/R/* | Peptide:  R | Sift:           - | PolyPhen:                 -
+Var name:              rs1014212097 | Alleles:   C/T | Alt allele: T | Codons:    Cga/Tga | Peptides:R/R/* | Peptide:  * | Sift:           - | PolyPhen:                 -
+Var name:               rs776164317 | Alleles:   A/G | Alt allele: G | Codons:    gAa/gGa | Peptides:  E/G | Peptide:  G | Sift: deleterious | PolyPhen: possibly damaging
+Var name:               rs748530814 | Alleles:   C/A | Alt allele: A | Codons:    ccC/ccA | Peptides:  P/P | Peptide:  P | Sift:           - | PolyPhen:                 -
+Var name:               rs531078851 | Alleles:   G/A | Alt allele: A | Codons:    ctG/ctA | Peptides:  L/L | Peptide:  L | Sift:           - | PolyPhen:                 -

@@ -1,0 +1,5 @@
+Variation rs1333049 is a SNP and comes from dbSNP
+Variation rs56385407 is a deletion and comes from dbSNP
+Variation COSM998 is a somatic SNV and comes from COSMIC
+Variation CI003207 is a insertion and comes from HGMD-PUBLIC
+Variation rs69772326 is a SNP and comes from dbSNP

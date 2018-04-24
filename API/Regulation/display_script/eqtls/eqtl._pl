@@ -71,7 +71,11 @@ foreach my $value (sort {$a <=> $b} keys %{$significant_hits_pvalue}){
 }
 # sort lowest p-value first
 foreach my $value (sort {$a <=> $b} keys %{$result}){
-  say $result->{$value}->{stableID} ."\tp-value: ". $value ."\tbeta: " .$result->{$value}->{beta} . Dumper($result->{$value}->{description});
+  my $desc = 'No descriptions found';
+  if (defined $result->{$value}->{description}){
+    $desc = join("\n\t", @{$result->{$value}->{description}});
+  }
+  say $result->{$value}->{stableID} ."\tp-value: ". $value ."\tbeta: " .$result->{$value}->{beta} . "\n\t" ."$desc\n";
 }
 
 # Fetch description for a Ensembl StableID
